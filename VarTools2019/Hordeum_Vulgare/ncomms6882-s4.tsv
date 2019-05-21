@@ -1,0 +1,43 @@
+DESeq								
+RNAseq	Exp. HA	Exp. Null	Ratio	Peak	Enrich.	Contig	Gene ID	Annotation of predicted protein
+AK250014	45	1	69,14	Peak_120	57,76	morex_contig_1561745	MLOC_11747	HAT dimerisation domain-containing protein-like
+AK251946	844	581	1,45	Peak_019	140	morex_contig_67491	MLOC_75261	Unknown protein
+AK251999	284	609	0,47	Peak_177	45,05	morex_contig_130674	MLOC_3419	Early nodulin 20, putative
+AK357471	197	322	0,61	Peak_083	70	morex_contig_1557910	MLOC_9838	Major facilitator superfamily protein
+AK359654	2137	2	1231,73	Peak_174	46	morex_contig_50576	MLOC_65723	LTP Protein
+AK361483	310	104	2,98	Peak_133	54	morex_contig_222082	MLOC_31769	D-arabinono-1,4-lactone oxidase family protein
+AK364583	1710	1248	1,37	Peak_186	43	morex_contig_2553716	MLOC_39507	Dof zinc finger protein 8
+AK364878	206	728	0,28	Peak_219	37	morex_contig_1583129	MLOC_19025	Glutathione synthetase
+AK371349	117	53	2,19	Peak_284	31	morex_contig_63135	MLOC_73196	Amino acid permease
+AK371543	57	23	2,44	Peak_404	24	morex_contig_67945	MLOC_75451	Receptor protein kinase, CLAVATA-like
+MLOC_12669	187	1	143,95	Peak_048	94	morex_contig_1563834	MLOC_12669	Aldehyde dehydrogenase
+MLOC_13228	14	0	NA	Peak_333	27	morex_contig_1565165	MLOC_13228	Protein COBRA, putative
+MLOC_15992	902	597	1,51	Peak_055	85	morex_contig_1572053	MLOC_15992	Beta-glucosidase
+MLOC_16744	95	1	128,88	Peak_182	44	morex_contig_1574355	MLOC_16744	BTB/POZ and MATH domain protein
+MLOC_17535	10	0	NA	Peak_017	141	morex_contig_1576991	MLOC_17535	Unknown protein
+MLOC_19924	937	704	1,33	Peak_387	24	morex_contig_158718	MLOC_19924	Calmodulin
+MLOC_34756	1243	2140	0,58	Peak_419	23	morex_contig_244525	MLOC_34756	Spermidine synthase
+MLOC_37069	400	588	0,68	Peak_155	49	morex_contig_2547726	MLOC_37069	Sulfotransferase domain
+MLOC_37476	481	690	0,70	Peak_477	21	morex_contig_2548480	MLOC_37476	Homogentisate phytyltransferase
+MLOC_43498	29	8	3,72	Peak_026	132	morex_contig_270811	MLOC_43498	Dehydrogenase/reductase SDR family protein 7-like
+MLOC_45039	113	52	2,16	Peak_128	56	morex_contig_276088	MLOC_45039	B3 transcription factor
+MLOC_52271	221	133	1,66	Peak_110	61	morex_contig_37410	MLOC_52271	Myb family transcription factor
+MLOC_54227	1291	931	1,39	Peak_067	81	morex_contig_38979	MLOC_54227	HvCBF1
+MLOC_55203	450	235	1,92	Peak_038	110	morex_contig_39746	MLOC_55203	Zinc finger protein CONSTANS-like protein
+MLOC_5568	56	8	6,71	Peak_003	181	morex_contig_136392	MLOC_5568	myb domain protein 21
+MLOC_58528	17	1	12,84	Peak_053	87	morex_contig_42756	MLOC_58528	PI-like MADS box gene
+MLOC_60266	44	98	0,45	Peak_297	30	morex_contig_44235	MLOC_60266	S-receptor kinase-like
+MLOC_67228	6134	3929	1,56	Peak_255	34	morex_contig_52759	MLOC_67228	Unknown protein
+MLOC_67623	616	809	0,76	Peak_327	28	morex_contig_53382	MLOC_67623	Controlling Leaf Angle, Zea mays
+MLOC_68576	222	0	NA	Peak_135	53	morex_contig_54983	MLOC_68576	Flowering locus T 1
+MLOC_71028	388	274	1,42	Peak_076	74	morex_contig_5899	MLOC_71028	Protein kinase
+MLOC_74526	1424	973	1,46	Peak_285	31	morex_contig_66029	MLOC_74526	Allantoinase
+MLOC_75260	125	68	1,85	Peak_019	140	morex_contig_67491	MLOC_75260	Unknown protein
+MLOC_79452	76	135	0,56	Peak_036	112	morex_contig_85083	MLOC_79452	Unknown protein
+								
+EdgeR								
+RNAseq	Log2 Exp. Ratio	Peak	Enrich.	Contig	Gene ID	Annotation of predicted protein		
+AK355728	0,49	Peak_346	26,57	morex_contig_56322	MLOC_69371	ABA-8' hydroxylase 2		
+MLOC_5705	0,45	Peak_143	50,83	morex_contig_40861	MLOC_56463	S-adenosyl-L-methionine-dependent methyltransferases superfamily protein		
+MLOC_58632	-0,83	Peak_361	25,62	morex_contig_42837	MLOC_58632	Cytochrome P450		
+MLOC_78915	0,50	Peak_356	26,12	morex_contig_82490	MLOC_78915	cytokinin riboside 5'-monophosphate phosphoribohydrolase LOGL1-like		

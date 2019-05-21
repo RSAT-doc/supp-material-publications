@@ -19,6 +19,10 @@ ncomms6882-s3.xlsx -> converted to ncomms6882-s3.bed with cut -f 2,3,4,8,9,12
 
 ncomms6882-s4.xlsx -> DE genes in RNAseq experiment (near peaks)
 
+* Download VCF from
+
+ftp://ftp.ensemblgenomes.org/pub/release-42/plants/vcf/hordeum_vulgare/hordeum_vulgare.vcf.gz
+
 ## 2) check peaks contain the Vrn1 motif and can be matched in 2017 genome (v2)
 
 > Mascher et al. 2017 A chromosome conformation capture ordered sequence of the barley genome. Nature. 544:427-433. doi:10.1038/nature2204
