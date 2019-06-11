@@ -1,0 +1,203 @@
+"""
+This code runs the analysis for the case study:
+'Assessment of the regulatory effect of GWAS reported variants in promoters with enhancer function'
+
+Author: Lucia Ramirez-Navarro
+
+Libraries used in the analysis:
+- Rsat
+- UCSC-executables/ucsc (Is also needed the hg38ToHg19 chain)
+- bedtools/2.26
+"""
+
+
+## Libraries to import
+import os
+
+
+
+#########################################################################################
+
+## FILES AND DIRECTORIES
+
+# Data
+DATA_DIR= "Data"
+
+# Variants
+VAR_DIR = os.path.join(DATA_DIR, "Variants")
+VAR_GWAS_DB_18 = os.path.join(VAR_DIR,"Gwas_v1.0_hg18")
+VAR_GWAS_DB_19 = os.path.join(VAR_DIR,"Gwas_v1.0_hg19.bed")
+
+
+# Epromoters
+PROMOTERS_DIR = os.path.join(DATA_DIR,"Promoters")
+EPROMOTERS ='CapStarrseq_Active_HELA CapStarrseq_Active_K562'.split()
+
+# All promoters
+PROMOTERS = os.path.join(PROMOTERS_DIR, "All_hpromoterRegions.bed")
+PROMOTERS_BGMODEL = os.path.join(PROMOTERS_DIR, "All_hpromoterRegions_BGmodel_mkv1.oligos")
+
+# Variants
+VARIANTS_DIR = os.path.join(DATA_DIR, "Variants")
+
+# Codes 
+CODES_DIR = "Codes"
+
+# Results
+RESULTS_DIR = "Results"
+
+
+#########################################################################################
+
+## RULES
+
+rule all:
+	input: 
+		VAR_GWAS_DB_19, \
+		expand(os.path.join(VAR_DIR,"{epromoters}_Gwas_variants.vcf"), epromoters=EPROMOTERS),\
+		expand(os.path.join(VAR_DIR,"{epromoters}_Gwas_variants.varseq"), epromoters=EPROMOTERS), \
+		PROMOTERS_BGMODEL, \
+		expand(os.path.join(RESULTS_DIR, "{epromoters}_VarScan_WDiff1_PvalRatio10_Filtered.tsv"), epromoters = EPROMOTERS)
+
+
+
+rule fetch_variants_gwas:
+	output:
+		gwas_db = VAR_GWAS_DB_18+".txt",\
+		gwas_bed_18 = VAR_GWAS_DB_18+".bed",\
+		gwas_bed_19 = VAR_GWAS_DB_19, \
+		unlift_bed = VAR_GWAS_DB_18+"_unlifted.bed", \
+		dbSNP = os.path.join(VAR_DIR, "dbSNP_human_9606_b151_GRCh37p13.vcf")
+	message: 
+		"""
+		Downloading and processing Gwas catalog v1.0. The output file has the coordinates in hg19 for all snps with known risk alelle, 
+		and the following fields: Chr, Initial position, Final position, Rsid, Ref alelle, Alt allele, Disease, Genes
+		"""
+	shell:
+		"""
+		# Downloading data  (coordinates are in GRCh38)
+		wget https://www.ebi.ac.uk/gwas/api/search/downloads/full -O {output.gwas_db}
+		cut -f8,12,13,14,21 {output.gwas_db} | \
+		tail -n +2 | grep -v ? | grep -v "SNP interaction" | grep -v "psy_rs" | \
+		perl -ne 'chomp;@S=split(/\\t/);$_=$S[1];if((!/.+;.+/) && (/X|Y|\d+/)){{$S[3]=~s/\\s//g;$_=$S[4]; if(/rs\d+-[A|T|G|C]{{1}}/){{$_=$S[2];if(/\d+/){{@rs=split(/-/,$S[4]); print "$S[1]\\t$S[2]\\t$rs[0]\\t$rs[1]\\t$S[0]\\t$S[3]\\n"}} }} }}' | \
+		awk -F '\\t' '{{if(length($4) == 1) {{print "chr"$1"\\t"$2-1"\\t"$2"\\t"$3"\\t"$4"\\t"$5"\\t"$6}} }}' | \
+		sort | uniq > {output.gwas_bed_18}
+		
+		# Changing coordinates to hg19 with liftover
+		cut -f1,2,3,4 {output.gwas_bed_18} > temp1.bed
+		liftOver temp1.bed hg38ToHg19.over.chain temp2.bed {output.unlift_bed}
+
+		# Merging data hg19 coordinates with additional data from the gwas catalog
+		join -j 4 -t $'\\t' <(sort -k 4 temp2.bed) <(sort -k 4 {output.gwas_bed_18}) | \
+		awk -F '\\t' '{{print $2"\\t"$3"\\t"$4"\\t"$1"\\t"$8"\\t"$9"\\t"$10}}' > Gwas_temp.txt
+
+		# Gwas doesn't contain reference alelles, so the dbSNP database (human_9606_b151_GRCh37p13)  was downloaded
+		wget ftp://ftp.ncbi.nlm.nih.gov/snp/organisms/human_9606_b151_GRCh37p13/VCF/All_20180423.vcf.gz -O {output.dbSNP}.gz
+		gunzip {output.dbSNP}.gz
+		sed -e '1,57d' {output.dbSNP} > temp.vcf # Removing header
+		
+		# Obtaining reference alleles
+		cut -f4 Gwas_temp.txt | sort -u > rsids_gwas.txt
+		awk 'NR==FNR{{inFileA[$1]; next}} ($3 in inFileA) {{print $1"\\t"$2"\\t"$3"\\t"$4"\\t"$5}}' rsids_gwas.txt temp.vcf  > temp_filter.vcf
+
+		# Merging reference alelles with original gwas information
+		join -t $'\\t' -1 4 -2 3 <(sort -k 4 Gwas_temp.txt) <(sort -k 3 temp_filter.vcf) | \
+		awk -F '\\t' '{{print $2"\\t"$3"\\t"$4"\\t"$1"\\t"$10"\\t"$5"\\t"$6"\\t"$7}}' >  {output.gwas_bed_19}
+
+		rm temp1.bed Gwas_temp.txt rsids_gwas.txt temp.vcf temp_filter.vcf 
+
+		"""
+
+
+rule intersect_variants:
+	input: 
+		eproms = os.path.join(PROMOTERS_DIR,"{epromoters}.bed"), \
+		gwas = VAR_GWAS_DB_19 + ".bed"
+	output: os.path.join(VAR_DIR,"{epromoters}_Gwas_variants.vcf")
+	message:
+		" Intersecting variants from gwas with the epromoter coordinates and posteriorly, converting the bed file into a vcf file"
+	shell:
+		"""
+		# Creating vcf header
+		printf "##fileformat=VCFv4.1\\n##FILTER=<ID=PASS,Description='All filters passed'>\\n##fileDate=20150218\\n#CHROM\\tPOS\\tID\\tREF\\tALT\\tQUAL\\tFILTER\\tINFO\\tFORMAT\\n" > header.txt
+		
+		# Intersecting coordinates and converting to vcf
+		bedtools intersect -a {input.gwas} -b {input.eproms} | awk '{{print $1"\\t"$3"\\t"$4"\\t"$5"\\t"$6"\\t.\\t.\\t.\\t.\\t"}}' | sort -u > temp.vcf
+		
+		# Adding vcf header to vcf file
+		cat header.txt temp.vcf > {output}
+		
+		rm header.txt temp.vcf
+		""" 
+
+
+rule convert_variations:
+	input: os.path.join(VAR_DIR,"{epromoters}_Gwas_variants.vcf")
+	output: os.path.join(VAR_DIR,"{epromoters}_Gwas_variants.varseq")
+	message: 
+		"Converting vcf file to varseq"
+	params:
+		specie = "Homo_sapiens" , \
+		assembly = "GRCh37"
+	shell:
+		"""		
+		# Vcf file to varbed format
+		convert-variations -i {input} -from vcf -to varBed -o temp.varbed
+		
+		# Varbed format to varseq format
+		retrieve-variation-seq -i temp.varbed -format varBed -species {params.specie} -assembly {params.assembly} -o {output}
+		"""
+
+
+rule create_bg_model:
+	input: os.path.join(PROMOTERS_DIR, "All_hpromoterRegions.bed")
+	output:
+		fasta = os.path.join(PROMOTERS_DIR,"All_hpromoterRegions.fasta"),\
+		bgmodel = PROMOTERS_BGMODEL
+	message:
+		"Calculating background model with all promoter sequences"
+	params:
+		genome = "hg19"
+	shell:
+		"""
+		# Retrieving fasta sequences from the promoter coordinates
+		fetch-sequences -i {input} -genome {params.genome} -o {output.fasta}
+
+		# Calculating background model
+		oligo-analysis -v 1 -quick -1str -return freq,occ -i {output.fasta} -l 2 -noov -o {output.bgmodel}
+		"""
+
+
+
+rule variation_scan:
+	input: 
+		seqs = os.path.join(VAR_DIR,"{epromoters}_Gwas_variants.varseq"), \
+		code = os.path.join(CODES_DIR, "Filter_VarScan_Results.R"), \
+		bg_model = PROMOTERS_BGMODEL, \
+		matrices = os.path.join(DATA_DIR, "Selected_Enriched_Motifs.tf") # Motifs 
+	output: 
+		res = os.path.join(RESULTS_DIR, "{epromoters}_VarScan_WDiff1_PvalRatio10.tsv"), \
+		res_filter = os.path.join(RESULTS_DIR, "{epromoters}_VarScan_WDiff1_PvalRatio10_Filtered.tsv")
+	message:
+		"""Calculating effect of the snps selected with variation-scan and filltering the ones 
+		that are predicted to have an opposite effect (positive to negative or viceversa)
+		"""
+	shell:
+		"""
+		# Variation scan
+		variation-scan -i {input.seqs} \
+		-m {input.matrices} \
+		-m_format transfac \
+		-bg {input.bg_model} \
+		-lth w_diff 1 -lth pval_ratio 10 \
+		-o {output.res} 
+		
+		# Filtering results
+		Rscript {input.code} {output.res} {output.res_filter}
+		"""
+
+
+
+
+
+

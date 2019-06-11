@@ -1,0 +1,41 @@
+; retrieve-variation-seq -i temp.varbed -format varBed -species Homo_sapiens -assembly GRCh37 -o Data/Variants/CapStarrseq_Active_K562_Gwas_variants.varseq
+; Input  file
+; 	temp.varbed
+; Output file
+; 	Data/Variants/CapStarrseq_Active_K562_Gwas_variants.varseq
+; Column contents
+; chr          - Chromosome
+; start        - Start position
+; end          - End position
+; strand       - Strand
+; id           - Identifier
+; soterm       - Sequence ontology (SO) term describing variation type
+; ref_var      - Reference variant
+; alt_var      - Alternative variant
+; allele_freq  - Frequency of the current allele
+; seq          - Sequence of the current variant, flanked by a user-specified neighbouring region
+#chr	start	end	strand	id	soterm	ref_var	alt_var	allele_freq	seq
+11	1874071	1874072	+	rs907611	SNV	G	A	NA	cctccccgagccatgaagagctgcctgcgAccatcttggccctcgcaccccgtctctgt
+11	1874071	1874072	+	rs907611	SNV	G	G	NA	cctccccgagccatgaagagctgcctgcgGccatcttggccctcgcaccccgtctctgt
+11	1874220	1874221	+	rs907612	SNV	C	T	NA	aaaaaacaacaccctgacccaagccgagaTaggttccaaacctcaacctgcagccggaa
+11	1874220	1874221	+	rs907612	SNV	C	C	NA	aaaaaacaacaccctgacccaagccgagaCaggttccaaacctcaacctgcagccggaa
+21	37692506	37692507	+	rs62229372	SNV	C	T	NA	ggtacccatagggctccacagtcgttccgTcacctcccagtcgggttgcggcggaggcc
+21	37692506	37692507	+	rs62229372	SNV	C	C	NA	ggtacccatagggctccacagtcgttccgCcacctcccagtcgggttgcggcggaggcc
+22	37505551	37505552	+	rs228916	SNV	C	T	NA	tcctggaggcccccgcttacctttgggagTggcagataggtgccgggcctgcacacagg
+22	37505551	37505552	+	rs228916	SNV	C	C	NA	tcctggaggcccccgcttacctttgggagCggcagataggtgccgggcctgcacacagg
+3	49726177	49726178	+	rs147997200	SNV	G	A	NA	tacgggattgggtggctctggctccacacAtcagctcagggcctgctggaccctgacct
+3	49726177	49726178	+	rs147997200	SNV	G	G	NA	tacgggattgggtggctctggctccacacGtcagctcagggcctgctggaccctgacct
+3	132136439	132136440	+	rs112409831	SNV	C	C	NA	gggaggaggcggagggggcggggaggcagCgccgcggcggcaccaggaacccgcggcag
+3	132136439	132136440	+	rs112409831	SNV	C	C	NA	gggaggaggcggagggggcggggaggcagCgccgcggcggcaccaggaacccgcggcag
+4	100274285	100274286	+	rs1789924	SNV	C	C	NA	tgcaattttgaatccacatggtgcagttaCgaaggaggagtagggaaattggataaaca
+4	100274285	100274286	+	rs1789924	SNV	C	C	NA	tgcaattttgaatccacatggtgcagttaCgaaggaggagtagggaaattggataaaca
+4	100274285	100274286	+	rs1789924	SNV	C	T	NA	tgcaattttgaatccacatggtgcagttaTgaaggaggagtagggaaattggataaaca
+4	100274285	100274286	+	rs1789924	SNV	C	C	NA	tgcaattttgaatccacatggtgcagttaCgaaggaggagtagggaaattggataaaca
+5	137673166	137673167	+	rs3756766	SNV	A	A	NA	cttctccccacctccccgcacctccccccAggcaaacgcaagcaactgaaccgcctatg
+5	137673166	137673167	+	rs3756766	SNV	A	A	NA	cttctccccacctccccgcacctccccccAggcaaacgcaagcaactgaaccgcctatg
+6	26285866	26285867	+	rs3999544	SNV	C	C	NA	aactttggtcctgcttcttggccccacccCgcatagcccagccctggatgacgtcacca
+6	26285866	26285867	+	rs3999544	SNV	C	C	NA	aactttggtcctgcttcttggccccacccCgcatagcccagccctggatgacgtcacca
+6	159463451	159463452	+	rs926657	SNV	C	T	NA	caaagggcgtgaatcttaatctagaaaaaTcaaccgataaacaaccacactgttaccag
+6	159463451	159463452	+	rs926657	SNV	C	C	NA	caaagggcgtgaatcttaatctagaaaaaCcaaccgataaacaaccacactgttaccag
+9	100700653	100700654	+	rs3758253	SNV	C	T	NA	agtaggggaaatggctggtgctagcaaccTctagcataggttgctatttatacagggaa
+9	100700653	100700654	+	rs3758253	SNV	C	C	NA	agtaggggaaatggctggtgctagcaaccCctagcataggttgctatttatacagggaa

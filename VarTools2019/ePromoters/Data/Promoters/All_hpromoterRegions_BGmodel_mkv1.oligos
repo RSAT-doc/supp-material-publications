@@ -1,0 +1,57 @@
+; oligo-analysis  -v 1 -quick -1str -return freq,occ -i Data/Promoters/All_hpromoterRegions.fasta -l 2 -noov -o Data/Promoters/All_hpromoterRegions_BGmodel_mkv1.oligos
+; Citation: van Helden et al. (1998). J Mol Biol 281(5), 827-42. 
+; Program version              	1.169
+; Quick counting mode          
+; Oligomer length              	2
+; Input file                   	Data/Promoters/All_hpromoterRegions.fasta
+; Input format                 	fasta
+; Output file                  	Data/Promoters/All_hpromoterRegions_BGmodel_mkv1.oligos
+; Discard overlapping matches
+; Counted on a single strand
+; Background model             	Bernoulli
+; Background estimation method 	
+; Sequence type                	DNA
+; Nb of sequences              	20719
+; Sum of sequence lengths      	5179750
+; discarded residues           	NA (quick mode)	 (other letters than ACGT)
+; discarded occurrences        	NA (quick mode)	 (contain discarded residues)
+; nb possible positions        	NA (quick mode)
+; total oligo occurrences      	5159029
+; total overlapping occurrences	395007
+; total non overlapping occ    	4764022
+; alphabet size                	4
+; nb possible oligomers        	16
+; oligomers tested for significance	0
+;
+; column headers
+;	1	seq            	oligomer sequence
+;	2	id             	oligomer identifier
+;	3	obs_freq       	observed relative frequency
+;	4	occ            	observed occurrences
+;	5	ovl_occ        	number of overlapping occurrences (discarded from the count)
+;	6	forbocc        	forbidden positions (to avoid self-overlap)
+#seq	id	obs_freq	occ	ovl_occ	forbocc
+aa	aa	0.0381744316615	196943	61035	196943
+ac	ac	0.0443536952399	228822	0	228822
+ag	ag	0.0708691499893	365616	0	365616
+at	at	0.0325179408761	167761	0	167761
+ca	ca	0.0615005265526	317283	0	317283
+cc	cc	0.0767896439427	396160	135545	396160
+cg	cg	0.0659399278430	340186	0	340186
+ct	ct	0.0711641667453	367138	0	367138
+ga	ga	0.0589744698082	304251	0	304251
+gc	gc	0.0949029361921	489607	0	489607
+gg	gg	0.0769379276604	396925	135541	396925
+gt	gt	0.0445533452128	229852	0	229852
+ta	ta	0.0272014365494	140333	0	140333
+tc	tc	0.0592939097648	305899	0	305899
+tg	tg	0.0616718766264	318167	0	318167
+tt	tt	0.0385884630616	199079	62886	199079
+; Host name	compute-00-04
+; Job started	2019-05-02.205100
+; Job done	2019-05-02.205101
+; Seconds	0.26
+;	user	0.26
+;	system	0.04
+;	cuser	3.46
+;	csystem	0.27

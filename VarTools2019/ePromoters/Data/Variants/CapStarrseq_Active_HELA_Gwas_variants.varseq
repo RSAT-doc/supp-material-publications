@@ -1,0 +1,27 @@
+; retrieve-variation-seq -i temp.varbed -format varBed -species Homo_sapiens -assembly GRCh37 -o Data/Variants/CapStarrseq_Active_HELA_Gwas_variants.varseq
+; Input  file
+; 	temp.varbed
+; Output file
+; 	Data/Variants/CapStarrseq_Active_HELA_Gwas_variants.varseq
+; Column contents
+; chr          - Chromosome
+; start        - Start position
+; end          - End position
+; strand       - Strand
+; id           - Identifier
+; soterm       - Sequence ontology (SO) term describing variation type
+; ref_var      - Reference variant
+; alt_var      - Alternative variant
+; allele_freq  - Frequency of the current allele
+; seq          - Sequence of the current variant, flanked by a user-specified neighbouring region
+#chr	start	end	strand	id	soterm	ref_var	alt_var	allele_freq	seq
+1	161719378	161719379	+	rs953301	SNV	G	A	NA	ggggaagcttatccttcaccatcaactttAggggtaggggtcagagggaacaagggtgg
+1	161719378	161719379	+	rs953301	SNV	G	G	NA	ggggaagcttatccttcaccatcaactttGggggtaggggtcagagggaacaagggtgg
+19	49375524	49375525	+	rs17272694	SNV	G	T	NA	ggggcgtggtcacgctcggaaactccgccTtgacgttgcaaaagctggaatctccgcga
+19	49375524	49375525	+	rs17272694	SNV	G	G	NA	ggggcgtggtcacgctcggaaactccgccGtgacgttgcaaaagctggaatctccgcga
+2	102953616	102953617	+	rs3771180	SNV	G	T	NA	gtcaacatcaagaattcttagtacatgatTcaccagcatttttgaacaagtcatagatt
+2	102953616	102953617	+	rs3771180	SNV	G	G	NA	gtcaacatcaagaattcttagtacatgatGcaccagcatttttgaacaagtcatagatt
+3	132136439	132136440	+	rs112409831	SNV	C	C	NA	gggaggaggcggagggggcggggaggcagCgccgcggcggcaccaggaacccgcggcag
+3	132136439	132136440	+	rs112409831	SNV	C	C	NA	gggaggaggcggagggggcggggaggcagCgccgcggcggcaccaggaacccgcggcag
+4	10118744	10118745	+	rs3822259	SNV	G	T	NA	agaatgcttctgggagtcggggggtgggtTcctttctgttgctagcttgtaggagaagc
+4	10118744	10118745	+	rs3822259	SNV	G	G	NA	agaatgcttctgggagtcggggggtgggtGcctttctgttgctagcttgtaggagaagc

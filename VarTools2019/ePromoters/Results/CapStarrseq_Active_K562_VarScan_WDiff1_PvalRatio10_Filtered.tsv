@@ -1,0 +1,5 @@
+var_id	ac_motif	var_class	var_coord	best_w	worst_w	w_diff	best_pval	worst_pval	pval_ratio	best_variant	worst_variant	best_offset	worst_offset	min_offset_diff	best_strand	worst_strand	str_change	best_seq	worst_seq	minor_allele_freq	Gwas_disease	Gwas_gene
+rs147997200	Creb3l2	SNV	3:49726177-49726178_+	2.02	-4.71	6.73	0.0011	0.012	10.91	G	A	-5	-5	0	D	D	0	CACACGTCA	CACACATCA	NA	Blood protein levels	NR
+rs147997200	Creb3l2	SNV	3:49726177-49726178_+	1.73	-5	6.73	0.0013	0.013	10	G	A	-4	-4	0	R	R	0	CTGACGTGT	CTGATGTGT	NA	Blood protein levels	NR
+rs62229372	Atf3,MAFG::NFE2L1,MAFG,NF2L1	SNV	21:37692506-37692507_+	5	-3.94	8.94	0.00069	0.028	40.58	T	C	-3	-3	0	R	R	0	GGTGACGG	GGTGGCGG	NA	Diastolic blood pressure	MORC3
+rs62229372	FOS::JUN	SNV	21:37692506-37692507_+	4.42	-0.21	4.62	0.0018	0.034	18.89	T	C	-4	-4	0	R	R	0	TGACGGA	TGGCGGA	NA	Diastolic blood pressure	MORC3

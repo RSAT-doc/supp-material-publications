@@ -1,0 +1,16 @@
+##fileformat=VCFv4.1
+##FILTER=<ID=PASS,Description='All filters passed'>
+##fileDate=20150218
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT
+chr11	1874072	rs907611	G	A	.	.	.	.	
+chr11	1874221	rs907612	C	T	.	.	.	.	
+chr21	37692507	rs62229372	C	T	.	.	.	.	
+chr22	37505552	rs228916	C	T	.	.	.	.	
+chr3	132136440	rs112409831	C	C	.	.	.	.	
+chr3	49726178	rs147997200	G	A	.	.	.	.	
+chr4	100274286	rs1789924	C	C	.	.	.	.	
+chr4	100274286	rs1789924	C	T	.	.	.	.	
+chr5	137673167	rs3756766	A	A	.	.	.	.	
+chr6	159463452	rs926657	C	T	.	.	.	.	
+chr6	26285867	rs3999544	C	C	.	.	.	.	
+chr9	100700654	rs3758253	C	T	.	.	.	.	
