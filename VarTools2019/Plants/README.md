@@ -1,17 +1,11 @@
 
 ## 1) Obtain ChIPseq peaks from literature
 
-> Deng et al (2015) Direct links between the vernalization response and other key traits of cereal crops. 
-> Nature Communications volume 6, Article number: 5882 (2015)  (https://www.nature.com/articles/ncomms6882)
+In [1] the authors describe the genomic targets of transcription factor VRN1 in barley (Hordeum vulgare),
+which they map to individual contigs of the 2012 reference genome (v1) [2].
 
-In this work the authors describe the genomic targets of transcription factor VRN1 in barley (Hordeum vulgare),
-which they map to individual contigs of the 2012 reference genome (v1).
+The following supplementary files were downloaded, which contain peaks and neighbor genes:
 
-> IBSC (2012) A physical, genetic and functional sequence assembly of the barley genome. Nature. 491:711-16. doi:10.1038/nature11543
-
-The following supplementary files were downloaded:
-
-# peaks and neighbor genes
 ncomms6882-s3.xlsx -> converted to ncomms6882-s3.bed with cut -f 2,3,4,8,9,12 
 ncomms6882-s4.xlsx -> DE genes in RNAseq experiment (near peaks)
 
@@ -79,3 +73,9 @@ cat hordeum_vulgare_ncomms6882-s3.2017.variant.MLOC
 This means that 2 genes (out of 38) for which the expression is known to be affected by VRN1 binding harbour natural variants
 in VRN1 sites.
 
+
+## Literature
+
+[1] Deng et al (2015) Direct links between the vernalization response and other key traits of cereal crops. Nature Communications volume 6, Article number: 5882 (2015) <https://www.nature.com/articles/ncomms6882>
+
+[2] IBSC (2012) A physical, genetic and functional sequence assembly of the barley genome. Nature. 491:711-16. doi:10.1038/nature11543
