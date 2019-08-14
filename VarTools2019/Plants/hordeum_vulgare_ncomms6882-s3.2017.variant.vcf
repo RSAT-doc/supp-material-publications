@@ -1,0 +1,30 @@
+##fileformat=VCFv4.1
+##fileDate=20181205
+##source=ensembl;version=95;url=http://plants.ensembl.org/hordeum_vulgare_subsp._vulgare
+##reference=ftp://ftp.ensembl.org/pub/release-95/fasta/hordeum_vulgare_subsp._vulgare/dna/
+##INFO=<ID=IBSC,Number=0,Type=Flag,Description="International Barley Sequencing Consortium">
+##INFO=<ID=TSA,Number=1,Type=String,Description="Type of sequence alteration. Child of term sequence_alteration as defined by the sequence ontology project.">
+##INFO=<ID=E_Cited,Number=0,Type=Flag,Description="Cited.http://www.ensembl.org/info/docs/variation/data_description.html#evidence_status">
+##INFO=<ID=E_Multiple_observations,Number=0,Type=Flag,Description="Multiple_observations.http://www.ensembl.org/info/docs/variation/data_description.html#evidence_status">
+##INFO=<ID=E_Freq,Number=0,Type=Flag,Description="Frequency.http://www.ensembl.org/info/docs/variation/data_description.html#evidence_status">
+##INFO=<ID=E_TOPMed,Number=0,Type=Flag,Description="TOPMed.http://www.ensembl.org/info/docs/variation/data_description.html#evidence_status">
+##INFO=<ID=E_Hapmap,Number=0,Type=Flag,Description="HapMap.http://www.ensembl.org/info/docs/variation/data_description.html#evidence_status">
+##INFO=<ID=E_Phenotype_or_Disease,Number=0,Type=Flag,Description="Phenotype_or_Disease.http://www.ensembl.org/info/docs/variation/data_description.html#evidence_status">
+##INFO=<ID=E_ESP,Number=0,Type=Flag,Description="ESP.http://www.ensembl.org/info/docs/variation/data_description.html#evidence_status">
+##INFO=<ID=E_gnomAD,Number=0,Type=Flag,Description="gnomAD.http://www.ensembl.org/info/docs/variation/data_description.html#evidence_status">
+##INFO=<ID=E_1000G,Number=0,Type=Flag,Description="1000Genomes.http://www.ensembl.org/info/docs/variation/data_description.html#evidence_status">
+##INFO=<ID=E_ExAC,Number=0,Type=Flag,Description="ExAC.http://www.ensembl.org/info/docs/variation/data_description.html#evidence_status">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+chr1H	28647976	vcZ23GVBC	A	G	.	.	IBSC_0;TSA=SNV
+chr1H	522795358	vcZ0CGKQ	G	T	.	.	IBSC_0;TSA=SNV
+chr2H	624110308	vcZ5Z7CV	G	A	.	.	IBSC_0;TSA=SNV
+chr3H	621608505	vcZ0PU2Q	G	A	.	.	IBSC_0;TSA=SNV
+chr3H	670197165	vcZ1MR2I	G	C	.	.	IBSC_0;TSA=SNV
+chr3H	694191869	vcZ399WA	G	T	.	.	IBSC_0;TSA=SNV
+chr4H	27048335	vcZ14SAD	CTGTCGACTTAGT	CTGT	.	.	IBSC_0;TSA=indel
+chr4H	636466514	vcZ5NH8K	G	C	.	.	IBSC_0;TSA=SNV
+chr5H	560322728	vcZ24QIBV	C	A	.	.	IBSC_0;TSA=SNV
+chr6H	515294845	vcZ20BRW	G	A	.	.	IBSC_0;TSA=SNV
+chr6H	560060288	vcZ3DJRB	G	A	.	.	IBSC_0;TSA=SNV
+chr7H	100374103	vcZ11NTA	A	T	.	.	IBSC_0;TSA=SNV
+chr7H	588385082	vcZ1GUFF	GACCAT	GACCATTCCTTCCTTTTCTGTCCAT	.	.	IBSC_0;TSA=indel
