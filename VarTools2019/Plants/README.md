@@ -11,17 +11,9 @@ which they map to individual contigs of the 2012 reference genome (v1).
 
 The following supplementary files were downloaded:
 
-* Peaks:
-
+# peaks and neighbor genes
 ncomms6882-s3.xlsx -> converted to ncomms6882-s3.bed with cut -f 2,3,4,8,9,12 
-
-* Neighbor genes:
-
 ncomms6882-s4.xlsx -> DE genes in RNAseq experiment (near peaks)
-
-* Download VCF from
-
-ftp://ftp.ensemblgenomes.org/pub/release-42/plants/vcf/hordeum_vulgare/hordeum_vulgare.vcf.gz
 
 ## 2) check peaks contain the Vrn1 motif and can be matched in 2017 genome (v2)
 
@@ -42,50 +34,47 @@ sort -k1,1 -k2,2n -k3,3n -k4,4n  ncomms6882-s3.2017.bed > ncomms6882-s3.2017.sor
 bedtools --version
 #bedtools v2.26.0
 
-`bedtools intersect -sorted -a hordeum_vulgare.vcf -b ncomms6882-s3.2017.sort.bed -wa > hordeum_vulgare_ncomms6882-s3.2017.vcf`
+bedtools intersect -sorted -a hordeum_vulgare.vcf -b ncomms6882-s3.2017.sort.bed -wa > hordeum_vulgare_ncomms6882-s3.2017.vcf
 
-`wc hordeum_vulgare_ncomms6882-s3.2017.vcf`
+wc hordeum_vulgare_ncomms6882-s3.2017.vcf
 #1604
 
 ## 4) Analyze overlapping variants in RSAT
 
-* Convert variants from vcf format to varBed
+$RSAT/perl-scripts/convert-variations -v 0  -i hordeum_vulgare_ncomms6882-s3.2017.vcf -from vcf -to varBed
 
-`$RSAT/perl-scripts/convert-variations -v 0  -i hordeum_vulgare_ncomms6882-s3.2017.vcf -from vcf -to varBed`
+$RSAT/bin/retrieve-variation-seq -source plants -species Hordeum_vulgare -assembly IBSCv2 \
+	-i hordeum_vulgare_ncomms6882-s3.2017.varBed -format varBed -mml 30
 
-* Retreive sequence srounding variants
-
-`$RSAT/bin/retrieve-variation-seq -source plants -species Hordeum_vulgare -assembly IBSCv2 	-i hordeum_vulgare_ncomms6882-s3.2017.varBed -format varBed -mml 30`
-
-* Run variation-scan using a PSSM representing the VRN1 binding motif on the variant sequences. The background model was calculated using updatream regions.
-
-`$RSAT/bin/variation-scan -v 1 -m VRN1.tf -m_format transfac -i hordeum_vulgare_ncomms6882-s3.2017.varSeq -bg 2nt_upstream-noorf_Hordeum_vulgare.IBSCv2.42-ovlp-1str.freq.gz -lth score 1  -lth w_diff 1  -lth pval_ratio 10  -uth pval 1e-3 `
+$RSAT/bin/variation-scan -v 1 -m VRN1.tf -m_format transfac -i hordeum_vulgare_ncomms6882-s3.2017.varSeq \
+	-bg 2nt_upstream-noorf_Hordeum_vulgare.IBSCv2.42-ovlp-1str.freq.gz \
+	-lth score 1  -lth w_diff 1  -lth pval_ratio 10  -uth pval 1e-3 
 
 ## 5) Retrieve genes linked to these variants
 
-`cut -f 2 hordeum_vulgare_ncomms6882-s3.2017.variants-seq_result | grep vcZ > hordeum_vulgare_ncomms6882-s3.2017.variant.list `
+cut -f 2 hordeum_vulgare_ncomms6882-s3.2017.variants-seq_result | grep vcZ > \
+	hordeum_vulgare_ncomms6882-s3.2017.variant.list
 
-`cat hordeum_vulgare_ncomms6882-s3.2017.variant.list | sort -u | wc`
+cat hordeum_vulgare_ncomms6882-s3.2017.variant.list | sort -u | wc
 #13
 
-`grep -P '^#' hordeum_vulgare.vcf > hordeum_vulgare_ncomms6882-s3.2017.variant.vcf`
-`grep -f hordeum_vulgare_ncomms6882-s3.2017.variant.list hordeum_vulgare.vcf >> 	hordeum_vulgare_ncomms6882-s3.2017.variant.vcf`
+grep -P '^#' hordeum_vulgare.vcf > hordeum_vulgare_ncomms6882-s3.2017.variant.vcf
+grep -f hordeum_vulgare_ncomms6882-s3.2017.variant.list hordeum_vulgare.vcf >> \
+	hordeum_vulgare_ncomms6882-s3.2017.variant.vcf
 
-`bedtools intersect -sorted -a ncomms6882-s3.2017.sort.bed -wa -b hordeum_vulgare_ncomms6882-s3.2017.variant.vcf > hordeum_vulgare_ncomms6882-s3.2017.variant.annotation `
+bedtools intersect -sorted -a ncomms6882-s3.2017.sort.bed -wa \
+	-b hordeum_vulgare_ncomms6882-s3.2017.variant.vcf > hordeum_vulgare_ncomms6882-s3.2017.variant.annotation
 
-`grep -c MLOC ncomms6882-s4.tsv`
+grep -c MLOC ncomms6882-s4.tsv
 #38
 
-`cut -f 4 hordeum_vulgare_ncomms6882-s3.2017.variant.annotation > MLOC.list`
+cut -f 4 hordeum_vulgare_ncomms6882-s3.2017.variant.annotation > MLOC.list
 	
-`grep -f MLOC.list ncomms6882-s4.tsv > hordeum_vulgare_ncomms6882-s3.2017.variant.MLOC`
+grep -f MLOC.list ncomms6882-s4.tsv > hordeum_vulgare_ncomms6882-s3.2017.variant.MLOC
 
-`cat hordeum_vulgare_ncomms6882-s3.2017.variant.MLOC`
-
-| AK371349   | 117 | 532 | 2,19 | Peak284  | 31  | morex_contig_63135 | MLOC_73196 | Amino acid permease |
-|------------|-----|-----|------|----------|-----|--------------------|------------|---------------------|
-| MLOC_79452 | 76  | 135 | 0,56 | Peak_036 | 112 | morex_contig_85083 | MLOC_79452 | Unknown protein     |
-
+cat hordeum_vulgare_ncomms6882-s3.2017.variant.MLOC
+#AK371349	117	53	2,19	Peak_284	31	morex_contig_63135	MLOC_73196	Amino acid permease
+#MLOC_79452	76	135	0,56	Peak_036	112	morex_contig_85083	MLOC_79452	Unknown protein
 
 This means that 2 genes (out of 38) for which the expression is known to be affected by VRN1 binding harbour natural variants
 in VRN1 sites.
