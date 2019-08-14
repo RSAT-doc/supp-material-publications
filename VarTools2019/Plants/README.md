@@ -10,7 +10,9 @@ The following supplementary files were downloaded, which contain peaks and neigh
 
 + ncomms6882-s4.xlsx -> DE genes in RNAseq experiment (near peaks)
 
-## 2) check peaks contain the Vrn1 motif and can be matched in 2017 genome (v2) [3,4]
+## 2) check peaks contain the Vrn1 motif and can be matched in 2017 genome (v2) 
+
+The following operations require the v3 barley genome [3] and BLAST+ [4]:
 
 ```
 perl _check_peaks_coords.pl > ncomms6882-s3.2017.bed
@@ -18,7 +20,9 @@ perl _check_peaks_coords.pl > ncomms6882-s3.2017.bed
 sort -k1,1 -k2,2n -k3,3n -k4,4n  ncomms6882-s3.2017.bed > ncomms6882-s3.2017.sort.bed
 ```
 
-## 3) intersect peaks and barley variants from Ensembl Plants (EG42) [5,6]
+## 3) intersect peaks and barley variants from Ensembl Plants (EG42)
+
+This step uses bedtools [5] and Ensembl Plants [6]:
 
 ```
 bedtools --version 
@@ -31,6 +35,9 @@ wc hordeum_vulgare_ncomms6882-s3.2017.vcf
 ```
 
 ## 4) Analyze overlapping variants in RSAT
+
+The following steps require RSAT, either a local installation or the web server at http://plants.rsat.eu, 
+and the Vrn1 motif obtained from <http://floresta.eead.csic.es/footprintdb/index.php?motif=AY750993:VRN1:EEADannot> [7]:
 
 ```
 $RSAT/perl-scripts/convert-variations -v 0  -i hordeum_vulgare_ncomms6882-s3.2017.vcf -from vcf -to varBed
@@ -83,8 +90,10 @@ in VRN1 sites.
 
 [3] Mascher et al. 2017 A chromosome conformation capture ordered sequence of the barley genome. Nature. 544:427-433. doi:10.1038/nature2204
 
-[4] Camacho C., Coulouris G., Avagyan V., Ma N., Papadopoulos J., Bealer K., & Madden T.L. (2008) "BLAST+: architecture and applications." BMC Bioinformatics 10:421.
+[4] Camacho et al. (2008) "BLAST+: architecture and applications." BMC Bioinformatics 10:421.
 
-[5] Aaron R. Quinlan Ira M. Hall (2010) BEDTools: a flexible suite of utilities for comparing genomic features. Bioinformatics 26(6):841–842 <https://doi.org/10.1093/bioinformatics/btq033>
+[5] Quinlan & Hall (2010) BEDTools: a flexible suite of utilities for comparing genomic features. Bioinformatics 26(6):841–842 <https://doi.org/10.1093/bioinformatics/btq033>
 
-[6] Paul J. Kersey et al (2018) Ensembl Genomes 2018: an integrated omics infrastructure for non-vertebrate species. Nucleic Acids Research 46(D1):D802–D808 <https://doi.org/10.1093/nar/gkx1011>
+[6] Kersey et al (2018) Ensembl Genomes 2018: an integrated omics infrastructure for non-vertebrate species. Nucleic Acids Research 46(D1):D802–D808 <https://doi.org/10.1093/nar/gkx1011>
+
+[7] Sebastian & Contreras-Moreira (2014) footprintDB: a database of transcription factors with annotated cis elements and binding interfaces. Bioinformatics 30, 258–65 <https://academic.oup.com/bioinformatics/article/30/2/258/226399>
