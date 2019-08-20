@@ -1,15 +1,22 @@
 use strict;
 use warnings;
 
+## data files
+
+# converted from https://media.nature.com/original/nature-assets/ncomms/2015/150106/ncomms6882/extref/ncomms6882-s3.xlsx,
+# see README.md
 my $bedfile = 'ncomms6882-s3.bed';
+
 # from ftp://ftpmips.helmholtz-muenchen.de/plants/barley/public_data/sequences/assembly3_WGSMorex_renamed_blastable_carma.zip
-my $oldContigsFasta = '~/Descargas/assembly3_WGSMorex_renamed_blastable_carma.fasta';
+my $oldContigsFasta = 'assembly3_WGSMorex_renamed_blastable_carma.fasta';
+
 # from ftp://ftp.ensemblgenomes.org/pub/release-43/plants/fasta/hordeum_vulgare/dna/Hordeum_vulgare.IBSC_v2.dna_rm.toplevel.fa.gz
-# ~/soft/ncbi-blast-2.9.0+/bin/makeblastdb -in Hordeum_vulgare.IBSC_v2.dna_rm.toplevel.fa -dbtype nucl
-my $newGenomeFasta = '~/Descargas/Hordeum_vulgare.IBSC_v2.dna_rm.toplevel.fa';
+my $newGenomeFasta = 'Hordeum_vulgare.IBSC_v2.dna_rm.toplevel.fa';
+
+## binaries, not supplied, should be installed in your system
 
 my $bedtoolsEXE = 'bedtools getfasta';
-my $blastnEXE = '~/soft/ncbi-blast-2.9.0+/bin/blastn';
+my $blastnEXE = 'ncbi-blast-2.9.0+/bin/blastn';
 
 ##########################################
 
