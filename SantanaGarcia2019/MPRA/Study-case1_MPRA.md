@@ -6,9 +6,7 @@ output:
   html_document:
     keep_md: yes
 ---
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+
 ## Description
 
 In order to assess the quality of results retrieves by *variation-scan* we compared the results of our tool to the variant effect meassured by 
@@ -28,28 +26,221 @@ should also be present in the environmental variables.
 
 ## R Libraries
 Libraries used throughout the code sections.
-```{r libraries}
+
+```r
 # Biostrings(2.42.1)
 library("Biostrings")
+```
+
+```
+## Loading required package: BiocGenerics
+```
+
+```
+## Loading required package: parallel
+```
+
+```
+## 
+## Attaching package: 'BiocGenerics'
+```
+
+```
+## The following objects are masked from 'package:parallel':
+## 
+##     clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+##     clusterExport, clusterMap, parApply, parCapply, parLapply,
+##     parLapplyLB, parRapply, parSapply, parSapplyLB
+```
+
+```
+## The following objects are masked from 'package:stats':
+## 
+##     IQR, mad, sd, var, xtabs
+```
+
+```
+## The following objects are masked from 'package:base':
+## 
+##     anyDuplicated, append, as.data.frame, basename, cbind,
+##     colnames, dirname, do.call, duplicated, eval, evalq, Filter,
+##     Find, get, grep, grepl, intersect, is.unsorted, lapply, Map,
+##     mapply, match, mget, order, paste, pmax, pmax.int, pmin,
+##     pmin.int, Position, rank, rbind, Reduce, rownames, sapply,
+##     setdiff, sort, table, tapply, union, unique, unsplit, which,
+##     which.max, which.min
+```
+
+```
+## Loading required package: S4Vectors
+```
+
+```
+## Warning: package 'S4Vectors' was built under R version 3.6.1
+```
+
+```
+## Loading required package: stats4
+```
+
+```
+## 
+## Attaching package: 'S4Vectors'
+```
+
+```
+## The following object is masked from 'package:base':
+## 
+##     expand.grid
+```
+
+```
+## Loading required package: IRanges
+```
+
+```
+## Warning: package 'IRanges' was built under R version 3.6.1
+```
+
+```
+## Loading required package: XVector
+```
+
+```
+## 
+## Attaching package: 'Biostrings'
+```
+
+```
+## The following object is masked from 'package:base':
+## 
+##     strsplit
+```
+
+```r
 # ggplot2(3.0.0)
 library("ggplot2")
 library("readr")
 library("preprocessCore")
 library("reshape")
+```
+
+```
+## 
+## Attaching package: 'reshape'
+```
+
+```
+## The following objects are masked from 'package:S4Vectors':
+## 
+##     expand, rename
+```
+
+```r
 library("plyr")
+```
+
+```
+## 
+## Attaching package: 'plyr'
+```
+
+```
+## The following objects are masked from 'package:reshape':
+## 
+##     rename, round_any
+```
+
+```
+## The following object is masked from 'package:XVector':
+## 
+##     compact
+```
+
+```
+## The following object is masked from 'package:IRanges':
+## 
+##     desc
+```
+
+```
+## The following object is masked from 'package:S4Vectors':
+## 
+##     rename
+```
+
+```r
 library("betareg")
 library("qvalue")
 library("UpSetR")
 library("stringr")
 library("ggpubr")
-library("gclus")
-library("pROC")
+```
 
+```
+## Loading required package: magrittr
+```
+
+```
+## 
+## Attaching package: 'ggpubr'
+```
+
+```
+## The following object is masked from 'package:plyr':
+## 
+##     mutate
+```
+
+```r
+library("gclus")
+```
+
+```
+## Loading required package: cluster
+```
+
+```r
+library("pROC")
+```
+
+```
+## Type 'citation("pROC")' for a citation.
+```
+
+```
+## 
+## Attaching package: 'pROC'
+```
+
+```
+## The following objects are masked from 'package:IRanges':
+## 
+##     cov, var
+```
+
+```
+## The following objects are masked from 'package:S4Vectors':
+## 
+##     cov, var
+```
+
+```
+## The following object is masked from 'package:BiocGenerics':
+## 
+##     var
+```
+
+```
+## The following objects are masked from 'package:stats':
+## 
+##     cov, smooth, var
 ```
 
 ## Declare used functions
 R functions definitions.
-```{r, eval = FALSE}
+
+```r
 #Create consensus sequences for consMatrix 
 getConsensusSeq <- function(consMatrix){
   consensusSequence <- apply(consMatrix, 2, function(column){
@@ -108,7 +299,8 @@ as a CSV file.
 NOTE: It is important to pinpoint that in line 978 there was an extra column, i.e. 45939722	#REF!,
 so we erased it before further processing. 
 
-```{bash, eval = FALSE}
+
+```bash
 #Convert table to .tab
 echo -e "#Variant\tConstructPos\tConstruct" > data/TableS1_Constructs.tab
 perl -pe 's/\,/\t/g' data/TableS1_Constructs.csv | tail -n 16554 >> data/TableS1_Constructs.tab
@@ -126,7 +318,8 @@ sort -k1,1 -k2,2n >> data/MPRA_Variants.vcf
 ### Ensembl release 75 variants and fasta genome
 **Time consumming step, final files are provided**
 The downloaded files from Ensembl were retrieved in 15-06-2018.
-```{bash, eval = FALSE}
+
+```bash
 #Download ensembl variations release 75
 wget --output-document=data/Homo_sapiens.r75.vcf.gz ftp://ftp.ensembl.org/pub/release-75/variation/vcf/homo_sapiens/Homo_sapiens.vcf.gz
 #Download release-75 fastas and concatenate them
@@ -143,7 +336,8 @@ done
 ### MPRA variant annotation with Ensembl release 75 variations
 The assessed MPRA variants were annotated using Ensembl release 75 variants. This entailed the retrieval of
 the chromsome sizes from the GRCh37 human genome build used to map these variants. 
-```{bash, eval = FALSE}
+
+```bash
 #Append all fasta files in a single file
 cat data/Homo_sapiens.GRCh37.r75.chr*.fa| bgzip -c > data/Homo_sapiens.GRCh37.r75.fa.gz
 rm data/Homo_sapiens.GRCh37.r75.chr*.fa
@@ -181,7 +375,8 @@ bcftools annotate --output data/MPRA_Variants.annot75.vcf.gz --output-type z --c
 Genomic sequences surrounding the assessed MPRA variants were extracted from the overlapping constructs and tested for any
 mismatch or discontinuity in the overlapping sequences.
 **Time consumming step, final files are provided**
-```{r, eval = FALSE, message=FALSE}
+
+```r
 #Read constructs
 constructs <- read.table(file = "data/TableS1_Constructs.tab",header = FALSE,sep = "\t")
 names(constructs) <- c("variant","construct_pos","construct")
@@ -464,13 +659,13 @@ write.table(df.final[,c(-11,-12)], file = "data/MPRAs_reconstructed.mod.varSeq",
             quote = FALSE ,row.names = FALSE, col.names = FALSE)
 write.table(df.errors, file = "data/MPRAS.errors.tab",sep = "\t",
             quote = FALSE ,row.names = FALSE, col.names = FALSE)
-
 ```
 
 ##Variation-scan Analysis
 ### Sequences from MPRA variations and oligo-analysis background model
 
-```{bash, eval=FALSE}
+
+```bash
 
 
 #convert-variations
@@ -514,7 +709,8 @@ This step is time consumoing, precomputed files are avialble in the folder *data
 
 ### Read MPRA data
 Read in raw barcode count data for MPRA:
-```{r, eval=FALSE, include=TRUE}
+
+```r
 dir <- getwd() ####SET DIRECTORY but defult we use the local directoy where the Rmarkdown was started
 MPRA <-
   data.frame(read_delim(
@@ -527,35 +723,39 @@ MPRA <-
 
 
 ### Remove modified constructs (due to restriction enzyme cut sites):
-```{r, eval=FALSE, include=TRUE}
+
+```r
 MPRA <- subset(MPRA, clean == "var")
 ```
 
 
 ### Combine plasmid counts from both replicates:
-```{r, eval=FALSE, include=TRUE}
+
+```r
 MPRA <- as.data.frame(append(MPRA, list(K562_minP_DNA = MPRA$K562_minP_DNA1 + MPRA$K562_minP_DNA2),after = 13))
 ```
 
 
 ### Normalize counts to counts per million (CPM):
-```{r, eval=FALSE, include=TRUE}
+
+```r
 for (i in 12:length(MPRA)) {
   MPRA[, i] <- (MPRA[, i] + 1) / 1000000 * sum(MPRA[, i])
   }
 ```
 
 ###Remove multi-allelic variants
-```{r, eval=FALSE, include=TRUE}
+
+```r
 MPRA <- MPRA[!(MPRA$pos %in% c(2519416, 43842618, 46046134)), ]
 #Exclude Duffy variant as well
 MPRA <- MPRA[!(MPRA$pos %in% c(159174683)),]
-
 ```
 
 
 ###Log2(x+1) normalize and plot DNA barcode density
-```{r, eval=FALSE, include=TRUE}
+
+```r
 MPRA[(length(MPRA) + 1):(length(MPRA) + length(MPRA[, 12:length(MPRA)]))] <- log(MPRA[, 12:(length(MPRA))], 2)
   
 #Keep only barcodes with minimum log2(CPM+1) determined from density plot:
@@ -564,7 +764,8 @@ print(c("Percent of barcodes remaining: ", (dim(MPRA_minP) / dim(MPRA))[1]))
 ```
 
 ###Define activity [log2(mRNA/DNA) = log2(mRNA) - log2(DNA)]:
-```{r, eval=FALSE, include=TRUE}
+
+```r
 attach(MPRA_minP)
 MPRA_minP$K562_CTRL_RATIO_R1 <-
 K562_CTRL_minP_RNA1.1 - K562_minP_DNA.1
@@ -590,7 +791,8 @@ detach(MPRA_minP)
 ```
 
 ###Quantile normalize activities, set median to 0, check, and combine replicates in separate DF:
-```{r, eval=FALSE, include=TRUE}
+
+```r
 temp <- normalize.quantiles(as.matrix(MPRA_minP[, 38:47]))
 temp <- temp - median(temp)
 MPRA_minP.melt <-
@@ -637,7 +839,8 @@ MPRA_minP.melt$value <- melt(temp[, 1:10])$value
 
 
 ###Derive activity estimates by collapsing barcodes and taking the median:
-```{r, eval=FALSE, include=TRUE}
+
+```r
 CTRL.temp <- MPRA_minP.melt[grep("CTRL", MPRA_minP.melt$variable),]
 CTRL.value <-
 tapply(CTRL.temp$value, factor(CTRL.temp$byallele), median)
@@ -659,7 +862,8 @@ by = "byallele")
 
 
 ###Create variable to indicate controls
-```{r, eval=FALSE, include=TRUE}
+
+```r
 controls <-
   c("1 155271258",
   "X 55054634",
@@ -672,11 +876,11 @@ controls <-
   ), after = 11))
   MPRA_minP.ratio <-
   MPRA_minP.ratio[!(MPRA_minP.ratio$construct %in% "1 159174683"), ]
-
 ```
   
 ###Determine active constructs and alleles with differences in activity
-```{r, eval=FALSE, include=TRUE}
+
+```r
   #Calculate p-values for overall enhancer activity
 MPRA_minP.control.final <-
 MPRA_minP.melt[grep("CTRL", MPRA_minP.melt$variable), ]
@@ -734,8 +938,8 @@ saveRDS(MPRA_minP.control.final.mut.pvalues, file = "MPRA_minP.control.final.mut
 ```
 
 ###Read in already calculated p-values for activity and differential activity by allele:
-```{r, eval=FALSE, include=TRUE}
 
+```r
 MPRA_minP.CTRL.pvalues <-
   readRDS(paste0(dir, "/data/Precomputed/","MPRA_minP.control.final.pvalues.rds"))
 
@@ -746,11 +950,11 @@ MPRA_minP.CTRL.pvalues <-
   readRDS(paste0(dir, "/data/Precomputed/","MPRA_minP.control.final.mut.pvalues.rds"))
   MPRA_minP.GATA1.mut.pvalues <-
   readRDS(paste0(dir, "/data/Precomputed/","MPRA_minP.GATA1.final.mut.pvalues.rds"))
-  
 ```
 
 ###Merge test results and calculate FDR:
-```{r, eval=FALSE, include=TRUE}
+
+```r
   MPRA_minP.ratio <-
   merge(MPRA_minP.ratio,
   MPRA_minP.CTRL.pvalues,
@@ -807,14 +1011,13 @@ tags <-
   temp$GATA1.fc <- temp$GATA1.median.x - temp$GATA1.median.y
   temp <- temp[, c("construct", "CTRL.fc", "GATA1.fc")]
   MPRA_minP.ratio <- merge(MPRA_minP.ratio, temp, by = "construct")
-  
 ```
 
  
 
 ### MPRA functional variants and their effect sizes
-```{r, eval=FALSE, include=TRUE}
 
+```r
 MPRA_minP.sig <-
   MPRA_minP.ratio[MPRA_minP.ratio$CTRL.mut.padj < 0.01 |
   MPRA_minP.ratio$GATA1.mut.padj < 0.01, ]
@@ -824,18 +1027,14 @@ MPRA_minP.sig <-
 write.table(MPRA_minP.ratio, file = paste0(dir, "/results/MPRA_results.tab"), sep = "\t", quote = FALSE, row.names = FALSE)
 write.table(MPRA_minP.sig, file = paste0(dir, "/results/MPRA_sig.tab"), sep="\t", quote=FALSE, row.names=FALSE)
 write.table(MPRA_minP.sig.annot, file = paste0(dir, "/results/MPRA_sig.annot.tab"), sep="\t", quote=FALSE, row.names=FALSE)
-
-
-  
-
 ```
 
 ##DeltaSVM
-```{bash, eval = FALSE}
+
+```bash
 
 python3 source/VarSeq2Fasta.py data/MPRA_Variants.annot75.varSeq  data/MPRA_Variants.annot75
 ./deltasvm.pl data/MPRA_Variants.annot75.ref.fasta data/MPRA_Variants.annot75.alt.fasta data/SupplementaryTable_k562weights.txt results/MPRA_Variants_deltaSVM_output.txt
-
 
 ```
 
@@ -844,7 +1043,8 @@ python3 source/VarSeq2Fasta.py data/MPRA_Variants.annot75.varSeq  data/MPRA_Vari
 
 ##Comparative analysis
 ###Read data 
-```{r, eval = FALSE}
+
+```r
 vs <-  read.table( paste0(dir, "/results/MPRA_casestudy.annot75.vs.nothresholds.table"), stringsAsFactors = FALSE, sep = "\t", header = TRUE, row.names = NULL, comment.char = ";") #Variation scan results with all matrices
 tfnames <- read.table(paste0(dir, "/data/clusters_motif_names_no_duplicates.tab")) #Transcription factor name equivalency
 colnames(tfnames) <- c("ac_motif", "tf_name")
@@ -894,15 +1094,13 @@ mpra_sig$posconcat <- paste(mpra_sig$chr.x, mpra_sig$pos.x, sep = ":")
 mpra$posconcat <- paste(mpra$chr, mpra$pos, sep = ":")
 
 mpra_nonsig <- mpra[!mpra$oligo %in% mpra_sig$oligo,] #Variables in MPRA not deemed as functional 
-
-
-
 ```
 
 
 
 Filter to extract results with a sign change in the weight, and a fold change in p-value.
-```{r eval = FALSE}
+
+```r
 vs_sign_change <- vs[vs[,"best_w"]/vs[,"worst_w"]<=0,]
 vs_sign_change <- merge(vs_sign_change, tfnames)
 vs_fold_change <- vs_sign_change[vs_sign_change[,"pval_ratio"]>=10,]
@@ -911,13 +1109,12 @@ vs_fold_change_pval <- vs_fold_change[vs_fold_change[,"best_pval"]<=0.0001,]
 vs_perm_sign_change <- vs_perm[vs_perm[,"best_w"]/vs_perm[,"worst_w"]<=0,]
 vs_perm_fold_change <- vs_perm_sign_change[vs_perm_sign_change[,"pval_ratio"]>=10,]
 vs_perm_fold_change_pval <- vs_perm_fold_change[vs_perm_fold_change[,"best_pval"]<=0.0001,]
-
-
 ```
 
 
 ##UpsetR figure
-```{r eval = FALSE}
+
+```r
 vs_change <- vs_fold_change_pval$posconcat
 mpra_change <- unique(mpra_sig$posconcat)
 vs_nochange <- setdiff(mpra$posconcat, unique(vs_fold_change_pval$posconcat))
@@ -933,7 +1130,8 @@ dev.off()
 ```
 
 ###UpsetR figure for permuted matrices
-```{r eval = FALSE}
+
+```r
 vs_change <- vs_perm_fold_change_pval$posconcat
 mpra_change <- unique(mpra_sig$posconcat)
 vs_nochange <- setdiff(mpra$posconcat, unique(vs_perm_fold_change_pval$posconcat))
@@ -951,7 +1149,8 @@ dev.off()
 
 
 ###ROC Curve for permuted matrices and real matrices
-```{r eval = FALSE}
+
+```r
 vs_perm_pvalratio_summary <- tapply(vs_perm$pval_ratio, vs_perm$clustervar, mean)
 vs_perm_clustervarmean <- tapply(vs_perm$pval_ratio, vs_perm$clustervar, mean)
 vs_perm_clustervarmean_df <- data.frame(clustervar = names(vs_perm_clustervarmean), clustervarmean = vs_perm_clustervarmean)
@@ -1016,5 +1215,4 @@ ggroc(list(permuted = roc_obj1, deltasvm = roc_obj2, variationscan = roc_obj3, d
   geom_hline(mapping = aes(x = 0, xend = 1, y = 0, yend = 1), yintercept = recall_100, color = "darkgrey", linetype = "dashed") +
   geom_hline(mapping = aes(x = 0, xend = 1, y = 0, yend = 1), yintercept = recall_1000, color = "darkgrey", linetype = "dashed") 
 dev.off()
-
 ```
