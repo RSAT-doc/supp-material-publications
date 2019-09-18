@@ -460,9 +460,11 @@ write.table(df.errors, file = "data/MPRAS.errors.tab",sep = "\t",
 ```
 
 ##Variation-scan Analysis
-### Sequences from MPRA variations and oligo-analyisis background model
+### Sequences from MPRA variations and oligo-analysis background model
 
 ```{bash, eval=FALSE}
+
+
 #convert-variations
 convert-variations -from vcf -to varBed -i data/MPRA_Variants.annot75.vcf -o data/MPRA_Variants.annot75.varBed
 
@@ -476,7 +478,16 @@ cut -f10 data/MPRA_Variants.annot75.varSeq | grep -v ";" | tail -n +2  > data/bg
 #oligo-analysis 
 oligo-analysis -l 2 -i data/bg_sequences.txt -o data/MPRA_bgmodel.oa -format raw 
 
-#variation-scan for all matrices for TFs relevant for erythrocytes
+#Obtain all matrices for TFs relevant for erythrocytes
+#Extract matrices from RSAT database
+##Obtain names for matrices of interest
+grep -i -E 'GATA1|KLF1|DHS|TAL1|ETS|FLI1|AP-1
+|NFE2|LDB1' data/clusters_motif_names.tab | cut -f1 > data/matrixnames.list
+
+##Extract matrices of interest from file
+python3 source/matrices.py > data/mpra_matrices.txt
+
+#variation-scan for 
 variation-scan -i data/MPRA_Variants.annot75.varSeq -m data/mpra_matrices.txt -bg data/MPRA_bgmodel.oa  -o results/MPRA_casestudy.annot75.vs.nothresholds.table  -lth w_diff 0 -lth pval_ratio 1
 
 #variation-scan for permuted matrices
