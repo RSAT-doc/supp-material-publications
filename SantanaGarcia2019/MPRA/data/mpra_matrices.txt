@@ -1,0 +1,1757 @@
+AC  cluster_13
+XX
+ID  cluster_13
+XX
+DE  caaAARGGGGCGTGkYay
+P0       a     c     g     t
+1    292.108 639.623 115.411 148.609
+2    866.533 250.415 91.1088 209.443
+3    1149.08 430.054 283.414 375.948
+4    1523.95 138.565 120.579 126.91
+5    1059.12 28.0192 181.615    81
+6    735.885 1.53665 334.542 1.53665
+7    5.1094     0 921.572 265.569
+8    8.4751     0 929.511 0.514075
+9        0     0 784.432 2.0679
+10   3.60918     0 847.891     0
+11   4.57345 1563.46 1.01633 12.4459
+12   1.55503 3.8784 726.067     0
+13       0 5.61482     0 1241.89
+14   33.436 1.04707 505.501 41.0155
+15   54.115 30.9183 490.614 263.603
+16   29.9742 2350.09     0 959.935
+17   909.465 409.956 23.5942 377.485
+18   304.023 471.515 127.901 777.061
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 335
+CC  accession: cluster_13
+CC  AC: cluster_13
+CC  id: cluster_13
+CC  name: cluster_13
+CC  version: 
+CC  name: cluster_13
+CC  description: caaAARGGGGCGTGkYay
+CC  transfac_consensus: 
+CC  matrix.nb: 335
+XX
+//
+AC  cluster_14
+XX
+ID  cluster_14
+XX
+DE  argdGGGcGtGGycs
+P0       a     c     g     t
+1    58.4791 12.2959 31.0134 25.5866
+2    731.808 266.129 1029.54 471.441
+3    1007.7 293.586 2490.94 630.993
+4    1696.36 377.511  2280 2340.93
+5    646.561 30.8368 5985.77 33.2779
+6    13.5396 25.5959 6077.6 59.7059
+7    19.4593 9.05671 6078.26 24.5411
+8    637.005 5187.13 125.578 1913.77
+9    77.8418 6.09065 6062.75 101.876
+10   151.434 563.981 1869.96 5005.5
+11   305.918 113.977 5926.53 216.438
+12   581.446 372.845 5516.71 1363.01
+13   481.351 3935.83 782.423 2236.31
+14   1077.48 1374.37 1101.03 959.8
+15   0.763889 2.54167 2.33333 1.30556
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 445
+CC  accession: cluster_14
+CC  AC: cluster_14
+CC  id: cluster_14
+CC  name: cluster_14
+CC  version: 
+CC  name: cluster_14
+CC  description: argdGGGcGtGGycs
+CC  transfac_consensus: 
+CC  matrix.nb: 445
+XX
+//
+AC  cluster_15
+XX
+ID  cluster_15
+XX
+DE  ywrRCCMCGCCCmChyy
+P0       a     c     g     t
+1    853.561 1466.86 1038.98 2082.18
+2    3112.66 300.262 182.061 2258.12
+3    3245.6 241.272 2462.57 244.223
+4    1710.83 13.8901 4695.68 26.7676
+5    158.926 5785.27 14.9091 23.6467
+6    12.9338 5784.8 9.53942 336.892
+7    4752.54 1662.46 8.79627 3.28812
+8    3.5078 5908.32 0.324667 5.59746
+9    361.378 10.6846 5885.15 122.708
+10   0.685683 5915.31 1.01312 2.48687
+11   1.52331 5925.11 2.29163 2.65296
+12   0.338817 5826.39 1.49814 170.52
+13   2826.53 2796.11 6.37242 349.651
+14   238.808 4398.57 179.78 1364.84
+15   1517.13 1697.09 434.152 2411.72
+16   212.926 333.12 161.637 501.733
+17   210.619 235.839 118.501 312.374
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 556
+CC  accession: cluster_15
+CC  AC: cluster_15
+CC  id: cluster_15
+CC  name: cluster_15
+CC  version: 
+CC  name: cluster_15
+CC  description: ywrRCCMCGCCCmChyy
+CC  transfac_consensus: 
+CC  matrix.nb: 556
+XX
+//
+AC  cluster_45
+XX
+ID  cluster_45
+XX
+DE  cACTTCCGsCGGAAgyg
+P0       a     c     g     t
+1    349.397 670.535 384.337 454.731
+2    1368.89 47.5237 128.624 14.4637
+3    2.55905 1945.92 116.182 101.339
+4    121.578     0 9.23375 1844.19
+5    0.51365 2.56835     0 1875.42
+6    0.5125 2051.95     0 1.53745
+7        0 2022.47     0 1.02535
+8    4.09515 9.72605 2125.39 12.2855
+9    2.04855 1015.56 1090.84 2.04855
+10   15.8643 2117.12 6.6528 37.358
+11   7.6798 11.2637 2111.44 5.1199
+12   4.09445 11.2598 2147.54 4.60625
+13   1492.47 8.78835 18.6106 4.1357
+14   1466.87 19.5996 8.7682 139.26
+15   458.994 234.62 1374.42 19.4662
+16   149.503 933.758 170.424 1235.32
+17   435.893 325.378 724.776 346.453
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1624
+CC  accession: cluster_45
+CC  AC: cluster_45
+CC  id: cluster_45
+CC  name: cluster_45
+CC  version: 
+CC  name: cluster_45
+CC  description: cACTTCCGsCGGAAgyg
+CC  transfac_consensus: 
+CC  matrix.nb: 1624
+XX
+//
+AC  cluster_46
+XX
+ID  cluster_46
+XX
+DE  rACCGGAwATCCGGtyTGh
+P0       a     c     g     t
+1    359.842 274.211 370.632   231
+2    1915.23 123.493 480.304 257.763
+3    234.095 2032.94 193.187 50.1511
+4    156.582 2035.47 4.78841 0.792637
+5    0.742279 0.742279 2038.04 0.531753
+6    0.532147 0.429774 2038.04 0.315789
+7    2038.03 0.799732 0.797758 0.322311
+8    896.512 122.541 0.212684 1550.37
+9    1995.16 1.00595 166.948 466.15
+10   0.643526 2.19817 6.9027 2031.2
+11   3.33938 2030.63 13.4799 0.971784
+12   3.54615 2037.92 3.20489 3.11738
+13   1.44246 10.1109 2035.39 169.316
+14   86.4641 251.489 2031.79 220.31
+15   343.124 508.419 127.566 1728.05
+16   292.895 377.579 270.053 361.737
+17   0.736842     0 1.42105 63.7895
+18   0.368421 1.05263 52.0526 11.7368
+19   19.1053 22.2632 1.10526 21.3158
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1635
+CC  accession: cluster_46
+CC  AC: cluster_46
+CC  id: cluster_46
+CC  name: cluster_46
+CC  version: 
+CC  name: cluster_46
+CC  description: rACCGGAwATCCGGtyTGh
+CC  transfac_consensus: 
+CC  matrix.nb: 1635
+XX
+//
+AC  cluster_47
+XX
+ID  cluster_47
+XX
+DE  rACmGGAAGyrCTTCCkGTy
+P0       a     c     g     t
+1     1079 440.222 1058.22 614.111
+2    3399.74 136.814 1149.73 161.494
+3    656.337 4911.01 1174.61 391.043
+4    2524.1 4244.29 566.568 338.264
+5    23.8183 29.7026 6770.89 20.147
+6    14.6985 23.3834 6764.62 10.9604
+7    6614.51 43.336 17.2342 96.1389
+8    5156.27 153.178 23.4211 1546.46
+9    1461.78 227.883 5306.38 55.619
+10   102.257 2624.4 255.696 3851.76
+11   4031.17 271.51 2278.53 95.6708
+12   40.9465 5208.79 175.542 1436.06
+13   1321.54 18.384 115.624 5396.12
+14   64.3789 9.9288 27.6954 6690.66
+15   6.45643 6587.2 9.00724 8.89251
+16   6.45407 6587.29 7.7934 7.57118
+17   350.746 596.582 4405.27 2547.29
+18   376.965 1207.29 4930.8 670.167
+19   162.905 858.799 163.527 3519.32
+20   615.111 1052.11 430.667 1093.56
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1646
+CC  accession: cluster_47
+CC  AC: cluster_47
+CC  id: cluster_47
+CC  name: cluster_47
+CC  version: 
+CC  name: cluster_47
+CC  description: rACmGGAAGyrCTTCCkGTy
+CC  transfac_consensus: 
+CC  matrix.nb: 1646
+XX
+//
+AC  cluster_52
+XX
+ID  cluster_52
+XX
+DE  rrswGATAAsra
+P0       a     c     g     t
+1    18.2683 16.6341 22.6585 9.41463
+2    282.533 55.6834 176.313 77.1049
+3    777.693 1294.03 1126.65 767.921
+4    3395.07 1188.11 157.262 2346.75
+5    2.08231 0.812927 5155.64 0.561485
+6    5155.42 1.24498 2.02546 4.11797
+7    3.45209 2.58559 3.97456 5151.99
+8    5131.55 107.871 23.4765 332.417
+9    5097.61 174.809 352.289 342.434
+10   470.123 1916.26 2795.4 452.458
+11   2064.92 895.237 2044.71 328.549
+12   1145.88 793.27 788.518 755.163
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1702
+CC  accession: cluster_52
+CC  AC: cluster_52
+CC  id: cluster_52
+CC  name: cluster_52
+CC  version: 
+CC  name: cluster_52
+CC  description: rrswGATAAsra
+CC  transfac_consensus: 
+CC  matrix.nb: 1702
+XX
+//
+AC  cluster_117
+XX
+ID  cluster_117
+XX
+DE  rkCACGTGays
+P0       a     c     g     t
+1    1397.73 969.681 2440.07 570.697
+2    808.566 614.236 2128.74 2379.53
+3    57.3586 4531.34 28.4323 19.1217
+4    4399.11 44.672 334.418 77.179
+5    9.70989 4450.26 135.589 160.043
+6    382.119 51.6336 4359.89 5.67502
+7    99.8889 280.448 33.0603 4526.25
+8    13.4721 17.9942 4548.82 46.3802
+9    2805.13 1243.75 700.291 1027.77
+10   407.001 2831.89 775.426 1531.19
+11   0.147493 0.324484 0.294985 0.117994
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 191
+CC  accession: cluster_117
+CC  AC: cluster_117
+CC  id: cluster_117
+CC  name: cluster_117
+CC  version: 
+CC  name: cluster_117
+CC  description: rkCACGTGays
+CC  transfac_consensus: 
+CC  matrix.nb: 191
+XX
+//
+AC  cluster_129
+XX
+ID  cluster_129
+XX
+DE  crsgrTGAsTCATsmyb
+P0       a     c     g     t
+1    1.31746 2.68254 0.865079 0.896825
+2    12.6984 5.19048 7.90476 3.68254
+3    6.06963 10.6525 13.5892 3.95057
+4    581.474 556.75 828.982 411.12
+5    2167.3 311.644 954.697 48.5301
+6    7.57086 16.8602 5.62742 3088.45
+7    3.20558 16.9588 3030.95 95.7335
+8    3085.7 37.6992 6.51613 28.0708
+9    86.218 1819.03 1176.34 128.91
+10   36.933 10.5435 77.3503 3068.11
+11   92.4514 3049.84 12.2518 7.25689
+12   3080.4 8.62688 20.1161 8.50012
+13   81.4274 768.496 251.335 2575.84
+14   364.534 1080.25 706.929 589.062
+15   145.774 142.872 85.6374 119.897
+16   15.5265 42.1039 5.41913 25.9823
+17   0.138026 0.20704 0.224293 0.224293
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 324
+CC  accession: cluster_129
+CC  AC: cluster_129
+CC  id: cluster_129
+CC  name: cluster_129
+CC  version: 
+CC  name: cluster_129
+CC  description: crsgrTGAsTCATsmyb
+CC  transfac_consensus: 
+CC  matrix.nb: 324
+XX
+//
+AC  cluster_131
+XX
+ID  cluster_131
+XX
+DE  aaawwwTGCTGActyakca
+P0       a     c     g     t
+1    648.675 297.541 337.967 399.505
+2    2922.52 962.955 1368.73 1198.1
+3    5342.67 545.333 1483.38 2405.21
+4    4974.11 304.173 599.625  3266
+5    4268.94 591.584 546.723 3983.63
+6    2509.68 1648.55 1893.46 2851.18
+7    432.868 1211.39 70.691 8642.24
+8    6.83775 5.75161 8897.71 1.25923
+9    661.054 8532.13 6.67791 32.7351
+10   61.4492 89.1036 5.61745 8883.55
+11   54.8873 10.9378 8708.33 580.313
+12   8837.11 53.6684 31.5843 87.5483
+13   340.563 6246.94 1775.23 1405.42
+14   1690.2 754.578 1677.96 3273.67
+15   759.023 1398.73 480.333 1009.44
+16   1816.97 202.734 750.304 873.775
+17   575.162 222.482 1865.91 977.102
+18   251.488 853.021 390.088 206.059
+19   8.65625 1.15625 1.0625 2.96875
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 346
+CC  accession: cluster_131
+CC  AC: cluster_131
+CC  id: cluster_131
+CC  name: cluster_131
+CC  version: 
+CC  name: cluster_131
+CC  description: aaawwwTGCTGActyakca
+CC  transfac_consensus: 
+CC  matrix.nb: 346
+XX
+//
+AC  cluster_222
+XX
+ID  cluster_222
+XX
+DE  smATGACt
+P0       a     c     g     t
+1    4.15054 7.20699 8.70699 0.518817
+2    23.4039 31.5536 12.701 10.5916
+3    53.8148 4.25902 19.0552 1.2043
+4    1.10215 1.97312 0.85215 74.3226
+5    3.1994 0.35215 73.62 1.07843
+6    75.2392 0.416667 1.03763 1.55645
+7    2.62097 60.851 2.42568 12.4356
+8    12.836 5.34408 13.6317 25.5215
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1356
+CC  accession: cluster_222
+CC  AC: cluster_222
+CC  id: cluster_222
+CC  name: cluster_222
+CC  version: 
+CC  name: cluster_222
+CC  description: smATGACt
+CC  transfac_consensus: 
+CC  matrix.nb: 1356
+XX
+//
+AC  cluster_229
+XX
+ID  cluster_229
+XX
+DE  krrCAGmTGGyck
+P0       a     c     g     t
+1    10.0769 9.53846 16.4615 14.6154
+2    81.8517 8.74965 50.7531 11.1762
+3    63.1175 37.2273 49.9091 2.20769
+4    5.34405 145.941 0.561538 0.692308
+5    151.838 0.215385 0.161538 0.323077
+6      1.1   1.6 137.633 12.2825
+7    103.264 38.2538 10.2441 0.776923
+8      2.7 4.33077 0.730769 144.777
+9    2.03846 2.52867 145.51 2.46154
+10   2.57692 11.6385 106.388 31.935
+11   16.9958 52.9552  13.9 68.7566
+12   21.5664 35.3427 19.0559 16.8811
+13   2.26573 2.01398 3.52448 3.27273
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1381
+CC  accession: cluster_229
+CC  AC: cluster_229
+CC  id: cluster_229
+CC  name: cluster_229
+CC  version: 
+CC  name: cluster_229
+CC  description: krrCAGmTGGyck
+CC  transfac_consensus: 
+CC  matrix.nb: 1381
+XX
+//
+AC  cluster_239
+XX
+ID  cluster_239
+XX
+DE  GGAAGGAAGGAAGGAAGG
+P0       a     c     g     t
+1        0     0 102.5     0
+2    1.9524     0 100.548     0
+3    101.524     0 0.9762     0
+4    101.524     0 0.9762     0
+5    0.9762     0 101.524     0
+6    1.9524     0 99.5714 0.9762
+7    100.548     0 1.9524     0
+8    99.5714     0 2.92855     0
+9        0     0 101.524 0.9762
+10       0 1.9524 100.548     0
+11   96.6429 3.90475 1.9524     0
+12   102.5     0     0     0
+13       0     0 102.5     0
+14       0 1.9524 100.548     0
+15   97.6191 2.92855     0 1.9524
+16   99.5714     0 1.9524 0.9762
+17   4.88095     0 94.6905 2.92855
+18   2.92855 2.92855 94.6905 1.9524
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1392
+CC  accession: cluster_239
+CC  AC: cluster_239
+CC  id: cluster_239
+CC  name: cluster_239
+CC  version: 
+CC  name: cluster_239
+CC  description: GGAAGGAAGGAAGGAAGG
+CC  transfac_consensus: 
+CC  matrix.nb: 1392
+XX
+//
+AC  cluster_250
+XX
+ID  cluster_250
+XX
+DE  srtmAACAGGAAryr
+P0       a     c     g     t
+1    18.8667  40.2 35.7333 30.1333
+2    220.867 81.2667 350.4 50.6667
+3    191.6 128.533 143.2 510.4
+4    502.533   219  49.8 77.3333
+5    594.8 75.4667 65.1333 81.4667
+6    594.2 24.4667 59.3333 13.0667
+7    20.0667 597.2 25.1333 30.4667
+8    531.4 175.933 14.9333 2.86667
+9    26.3333  18.2 598.333 6.13333
+10   7.46667   5.4 598.333 16.5333
+11   598.333 13.9333   6.4 10.3333
+12   579.667  28.6 11.9333 171.733
+13   186.4 36.9333 472.2 12.2667
+14    91.4 190.933 74.1333 367.067
+15   164.067 75.5333   194 111.733
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1405
+CC  accession: cluster_250
+CC  AC: cluster_250
+CC  id: cluster_250
+CC  name: cluster_250
+CC  version: 
+CC  name: cluster_250
+CC  description: srtmAACAGGAAryr
+CC  transfac_consensus: 
+CC  matrix.nb: 1405
+XX
+//
+AC  cluster_254
+XX
+ID  cluster_254
+XX
+DE  sAGGAAGtw
+P0       a     c     g     t
+1    9.99334 24.5911 15.8741 3.54145
+2    51.4358 14.7731 4.33388 2.36629
+3    2.02068 0.272727 69.7415 1.23778
+4    2.04762     0 71.2251     0
+5    70.8843     0 2.38843     0
+6    60.1411 0.570245 0.440918 12.0296
+7    17.1463 2.60721 52.5528 0.966382
+8    4.31765 10.3288 9.94499 48.6813
+9    4.13223 0.619836 1.8595 2.47934
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1409
+CC  accession: cluster_254
+CC  AC: cluster_254
+CC  id: cluster_254
+CC  name: cluster_254
+CC  version: 
+CC  name: cluster_254
+CC  description: sAGGAAGtw
+CC  transfac_consensus: 
+CC  matrix.nb: 1409
+XX
+//
+AC  cluster_296
+XX
+ID  cluster_296
+XX
+DE  rsmkGGSAGdkkGgGss
+P0       a     c     g     t
+1    18.3333 0.666667 20.6667 0.666667
+2        0 17.6667 19.3333 3.66667
+3    10.6667 19.3333 3.66667     7
+4    3.66667     0 19.3333 17.6667
+5        0 3.66667    30     7
+6        0 8.66667    32     0
+7        0 10.6667    30     0
+8       32     0 8.66667     0
+9        0     0    37 3.66667
+10   10.6667     0 19.3333 10.6667
+11   3.66667     0 12.3333    25
+12   3.66667 3.66667    23 10.6667
+13       0 2.33333 38.3333     0
+14   3.66667     7 26.3333 3.66667
+15   3.66667     0    30     7
+16   2.33333 17.6667 20.6667     0
+17   0.666667 18.3333 17.3333 4.33333
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1454
+CC  accession: cluster_296
+CC  AC: cluster_296
+CC  id: cluster_296
+CC  name: cluster_296
+CC  version: 
+CC  name: cluster_296
+CC  description: rsmkGGSAGdkkGgGss
+CC  transfac_consensus: 
+CC  matrix.nb: 1454
+XX
+//
+AC  cluster_415
+XX
+ID  cluster_415
+XX
+DE  TCTCGCGAkAay
+P0       a     c     g     t
+1    3.08709 4.04991 0.67445 79.6885
+2    9.90174 86.8162 2.84481 0.424725
+3    0.654675 3.45601 1.39264 94.4842
+4    0.175 99.575   0.2 0.0375
+5    0.5937 0.5625 98.7438 0.0875
+6    0.4875 98.1308   0.1 1.28166
+7      0.3 1.6375 96.975 1.0875
+8    89.0842 7.47546 1.26019 2.05514
+9    0.7025 4.96056 58.1395 23.6974
+10   65.425 1.45779 7.19211 0.92505
+11   5.1625 1.825 2.875 2.6375
+12   0.7375  3.25 1.7375 6.775
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1587
+CC  accession: cluster_415
+CC  AC: cluster_415
+CC  id: cluster_415
+CC  name: cluster_415
+CC  version: 
+CC  name: cluster_415
+CC  description: TCTCGCGAkAay
+CC  transfac_consensus: 
+CC  matrix.nb: 1587
+XX
+//
+AC  cluster_433
+XX
+ID  cluster_433
+XX
+DE  mmaaACMGGAAGTkcrh
+P0       a     c     g     t
+1    13.9193 14.4167 4.75223 6.57843
+2    20.0505 19.9828 18.111 15.5223
+3    34.4894 8.0761 12.924 17.8438
+4    28.2274 14.6831 14.4999 15.9229
+5    56.2402 1.37227 13.9556 2.0986
+6    0.6729 62.5153 10.0389 0.106333
+7    18.4985 54.5805 0.217233 0.0370667
+8    0.1654 0.0771667 73.0336 0.0572
+9    0.0857333 0.0922 73.0785 0.0769
+10   72.9679 0.0574333 0.0589667 0.249033
+11   60.9555 0.140433 0.0371667 12.2002
+12   8.66453 0.686867 63.4851 0.163533
+13   0.722867 13.8153 0.481067 58.3141
+14   16.2442 15.5634 22.7488 18.777
+15   18.1993 35.4955 7.9112 11.7274
+16   21.1113 16.4338 24.5264 11.2618
+17   19.6452 18.3451 10.0157 25.3273
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1607
+CC  accession: cluster_433
+CC  AC: cluster_433
+CC  id: cluster_433
+CC  name: cluster_433
+CC  version: 
+CC  name: cluster_433
+CC  description: mmaaACMGGAAGTkcrh
+CC  transfac_consensus: 
+CC  matrix.nb: 1607
+XX
+//
+AC  cluster_437
+XX
+ID  cluster_437
+XX
+DE  yrrCMGGAAGyrrsksrs
+P0       a     c     g     t
+1    0.571429 8.61904 4.52381 16.1429
+2    14.9625     0 18.3837 10.6538
+3    50.6823 17.4333 48.5034 13.0952
+4    3.83724 111.105 28.4749 0.726186
+5    104.881 36.0714 2.89286 0.297614
+6        0     0   144 0.142857
+7    0.142857     0   144     0
+8    143.857     0 0.285714     0
+9    129.707     0 0.285714 14.1503
+10   26.1059 1.72874 115.713 0.595243
+11   2.4881 40.455 16.634 84.5658
+12   42.9506 16.9218 75.7232 8.5473
+13   39.7605 29.5262 58.2655 16.4478
+14   17.2302 46.7669 48.8133 31.1896
+15   20.9609 21.3273 41.3118 60.5429
+16   2.5061 8.55517 10.837 6.67316
+17   7.73606 5.76304 9.75459 5.31773
+18       0 7.14286 4.7619 2.38096
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1611
+CC  accession: cluster_437
+CC  AC: cluster_437
+CC  id: cluster_437
+CC  name: cluster_437
+CC  version: 
+CC  name: cluster_437
+CC  description: yrrCMGGAAGyrrsksrs
+CC  transfac_consensus: 
+CC  matrix.nb: 1611
+XX
+//
+AC  cluster_496
+XX
+ID  cluster_496
+XX
+DE  AAACTACAwyTCCCAG
+P0       a     c     g     t
+1    9.09091     0     0     0
+2       22 0.363636 4.81818 0.0909091
+3    78.2637 1.75451 0.981818 0.818182
+4    1.00025 79.5179   0.7   0.6
+5    1.07273 5.23708 0.694273 93.005
+6    92.2593 3.35399 2.23117 2.24641
+7    1.03636 97.3605   0.9 0.794055
+8    91.5081 2.03038 5.46934 0.901291
+9    58.0123 7.72187 7.31323 26.8707
+10   9.17115 33.6768 8.35314 48.708
+11   3.54346 4.56069 1.32158 90.6561
+12   1.36204 94.9275 0.739727 3.07075
+13   0.505527 61.1137 0.605527 1.41159
+14   1.01462 60.6961 0.8656 0.978255
+15   21.4777 0.606064 4.74154 0.356509
+16   0.636364 0.818182 6.72727 0.909091
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1675
+CC  accession: cluster_496
+CC  AC: cluster_496
+CC  id: cluster_496
+CC  name: cluster_496
+CC  version: 
+CC  name: cluster_496
+CC  description: AAACTACAwyTCCCAG
+CC  transfac_consensus: 
+CC  matrix.nb: 1675
+XX
+//
+AC  cluster_519
+XX
+ID  cluster_519
+XX
+DE  ArcCGGAArtrrsyaATTAr
+P0       a     c     g     t
+1    25.6429     0 1.28571 3.14286
+2    693.429 147.357 334.357 158.214
+3    233.357 755.643 334.786 84.4286
+4    311.786 1067.14    42 7.85714
+5    3.21429 0.642857 1068.71     3
+6    3.35714 1.42857 1068.57 4.64286
+7    1063.36     6 4.07143 14.5714
+8    1043.07 58.3571 9.92857 306.714
+9    415.286 90.7857 540.929 27.9286
+10   122.929 239.429 105.929 614.429
+11   297.643 209.5 391.643 169.857
+12   348.857 222.643 387.929 109.143
+13   207.5 295.571 422.714 143.143
+14   138.214 504.643 225.214 404.571
+15   825.214   321 361.571 172.5
+16   1027.07 257.929 103.143    99
+17   21.7143 26.3571 26.7143 1068.21
+18    57.5 148.429    57 1068.36
+19   1065.93 107.286 179.929 187.714
+20   55.2143 45.3571 76.9286    32
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1701
+CC  accession: cluster_519
+CC  AC: cluster_519
+CC  id: cluster_519
+CC  name: cluster_519
+CC  version: 
+CC  name: cluster_519
+CC  description: ArcCGGAArtrrsyaATTAr
+CC  transfac_consensus: 
+CC  matrix.nb: 1701
+XX
+//
+AC  cluster_528
+XX
+ID  cluster_528
+XX
+DE  avsmGGAmGGAwrTCCksyt
+P0       a     c     g     t
+1    349.143    82 130.714 114.571
+2    1918.71 1768.71 1916.71 850.857
+3     1585 3658.43 2353.86   599
+4    2405.29 5055.86 586.857 153.571
+5    68.8571 16.7143 6513.43 17.2857
+6    26.4286 17.2857 6514.43 20.5714
+7    6491.86    83 54.1429 18.7143
+8    2912.14 5842.57 23.5714   178
+9       54 14.5714 6517.71    27
+10   49.2857 68.7143 6489.29 192.857
+11   6515.43 11.7143    16 10.5714
+12   2182.14 1840.29    18 3446.43
+13   4011.71 69.4286 2865.86  1012
+14   46.7143 9.85714 9.57143 6515.29
+15   13.5714 6517.43 6.14286 5.14286
+16   5.85714 6513.29 6.14286 64.2857
+17   167.857 646.571 5182.57 2096.43
+18   475.571 2771.14 3431.29 1767.29
+19   940.571 2090.71 1611.86 1877.43
+20   1368.57 913.429 591.286 2959.29
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1711
+CC  accession: cluster_528
+CC  AC: cluster_528
+CC  id: cluster_528
+CC  name: cluster_528
+CC  version: 
+CC  name: cluster_528
+CC  description: avsmGGAmGGAwrTCCksyt
+CC  transfac_consensus: 
+CC  matrix.nb: 1711
+XX
+//
+AC  cluster_544
+XX
+ID  cluster_544
+XX
+DE  gmCACrCCCmygmCACrCCCmC
+P0       a     c     g     t
+1    2642.8 1427.8 6957.8 722.8
+2    3466.6 7085.4 691.4 893.8
+3    474.2 10650 296.2 341.8
+4    10252.8 1324.2 822.8  76.2
+5     98.2 11049.8  17.6  83.4
+6    5733.2 122.4 6093.8 372.6
+7       16 11081.4  14.6  10.8
+8     34.6 11077.8  10.2  10.4
+9       18 10565  12.8 1698.4
+10   4076.4 6017.4 282.4 1527.6
+11   560.2 7466.4 409.6 2976.8
+12   1563.2  1855  6441 1259.2
+13   3704.2  6181 470.6 1713.8
+14     359 10837.8    85 296.6
+15   10580.8 819.4 305.2    27
+16    38.8 11062.8   1.8    84
+17   4240.6  31.2 7262.2 253.8
+18     9.4 11105.2    10  11.4
+19    15.6 11110.2    22   4.4
+20    37.2 10298.6  20.2 2141.4
+21    4608 5849.2 157.4 1737.4
+22   725.8 9937.6 350.6 1968.2
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1729
+CC  accession: cluster_544
+CC  AC: cluster_544
+CC  id: cluster_544
+CC  name: cluster_544
+CC  version: 
+CC  name: cluster_544
+CC  description: gmCACrCCCmygmCACrCCCmC
+CC  transfac_consensus: 
+CC  matrix.nb: 1729
+XX
+//
+AC  cluster_551
+XX
+ID  cluster_551
+XX
+DE  rrcCGGAAGTmrTwAAm
+P0       a     c     g     t
+1      4.5   2.6 6.06667 3.06667
+2    1524.03 324.3 779.933 367.9
+3    367.567 1852.93 625.133 108.6
+4    206.767 2416.23 42.5667  10.6
+5    5.66667 2.96667 2456.5   3.7
+6    9.03333   3.8 2456.47  25.9
+7    2457.03   9.2   9.5 17.2667
+8    2393.2 79.8667  14.4 312.6
+9    219.667 53.3333 2374.57   8.7
+10    30.3 280.233 37.3333 2320.3
+11   813.133 1628.13 180.867   535
+12   1024.57 62.6667 1726.87 80.7667
+13   54.7667 60.2667 64.9667 2434.23
+14   2077.47 159.667 95.8333 1023.33
+15   2441.9 63.4667 85.1333 117.467
+16   2069.37 153.7 82.5333 138.367
+17   940.067 509.2 240.7 314.767
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1737
+CC  accession: cluster_551
+CC  AC: cluster_551
+CC  id: cluster_551
+CC  name: cluster_551
+CC  version: 
+CC  name: cluster_551
+CC  description: rrcCGGAAGTmrTwAAm
+CC  transfac_consensus: 
+CC  matrix.nb: 1737
+XX
+//
+AC  cluster_558
+XX
+ID  cluster_558
+XX
+DE  mmCCACgCaCCCmty
+P0       a     c     g     t
+1     6191 10061.5 2401.5 2675.5
+2    13437.5  6877 1749.5  1681
+3      540 21247   272 265.5
+4      310 21268.5 315.5 220.5
+5    20395   610   325 2205.5
+6      243 21194 153.5   589
+7    6357.5 7079.5 16795.5 1312.5
+8     3659 20498.5 248.5   479
+9    13440.5  1487 3562.5  6151
+10     790 20883.5  1083   292
+11   494.5 21275   359   201
+12   363.5 21288.5   200 373.5
+13    8915 10273.5  2939  2689
+14    3092  3941 1823.5 16151.5
+15   3580.5  7301  2253 12158
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1744
+CC  accession: cluster_558
+CC  AC: cluster_558
+CC  id: cluster_558
+CC  name: cluster_558
+CC  version: 
+CC  name: cluster_558
+CC  description: mmCCACgCaCCCmty
+CC  transfac_consensus: 
+CC  matrix.nb: 1744
+XX
+//
+AC  cluster_562
+XX
+ID  cluster_562
+XX
+DE  rsCGGAArCAssTGkk
+P0       a     c     g     t
+1    2383.64 522.182 1494.18 713.545
+2      622 2727.91 1258.64 198.818
+3    1030.45  4004   240 81.1818
+4    38.4545 64.3636 4175.45 31.8182
+5    47.5455 49.9091 4175.73 77.7273
+6    4167.18 84.6364 72.6364 81.8182
+7    3973.82 141.909 82.3636 1276.64
+8    2151.45 649.545 1395.09 62.6364
+9    25.8182 4168.09 44.8182 82.4545
+10   4170.27 57.8182 133.636 45.9091
+11   49.3636 1874.73 2656.09 124.455
+12   225.909 2281.36 2797.36 45.8182
+13   73.3636 166.091 100.636 4171.82
+14   50.5455 35.5455 4172.36 93.6364
+15   603.455 923.364 1574.73 1085.82
+16   704.909 659.727   757 889.364
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1749
+CC  accession: cluster_562
+CC  AC: cluster_562
+CC  id: cluster_562
+CC  name: cluster_562
+CC  version: 
+CC  name: cluster_562
+CC  description: rsCGGAArCAssTGkk
+CC  transfac_consensus: 
+CC  matrix.nb: 1749
+XX
+//
+AC  cluster_585
+XX
+ID  cluster_585
+XX
+DE  rsCGGAwrTTrCGyAAy
+P0       a     c     g     t
+1    888.143 188.571 680.571 333.714
+2    363.286 960.714   489    71
+3    311.571 1565.71    91 24.7143
+4    10.2857 9.28571  1632 37.5714
+5    12.1429 20.4286  1632 6.57143
+6     1632 17.2857 29.5714 37.1429
+7    1053.71 151.143 22.1429 655.143
+8      665 66.1429 896.429 4.71429
+9    0.285714 2.85714 6.57143  1632
+10   10.8571 8.71429 157.429  1632
+11     895 6.42857 1172.14    58
+12   14.8571  1632 37.4286 160.714
+13   252.714 24.1429  1632 15.1429
+14     114 971.571 14.1429 868.714
+15    1632 160.286 9.85714 10.7143
+16    1632     6 11.4286     8
+17   43.2857 652.286 266.857 669.143
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1774
+CC  accession: cluster_585
+CC  AC: cluster_585
+CC  id: cluster_585
+CC  name: cluster_585
+CC  version: 
+CC  name: cluster_585
+CC  description: rsCGGAwrTTrCGyAAy
+CC  transfac_consensus: 
+CC  matrix.nb: 1774
+XX
+//
+AC  cluster_587
+XX
+ID  cluster_587
+XX
+DE  ktGTtkmCGGAWGtg
+P0       a     c     g     t
+1    13.1429 9.71429 23.4286 16.5714
+2      195   137 152.571  1022
+3    311.714 35.4286 1082.71 96.8571
+4    94.4286 200.857 124.714 1082.71
+5    174.714 105.429   325 1082.71
+6    128.143 24.7143 581.429 590.429
+7    615.429 458.286 101.857 44.5714
+8    24.1429 1082.71 25.5714 20.1429
+9    4.14286 14.8571 1082.71 18.4286
+10   27.5714 23.1429 1082.71 77.7143
+11   1082.71 62.1429 57.2857   111
+12   779.429 17.7143 24.4286 306.571
+13   246.857 55.7143 826.571    60
+14   89.7143 242.857 148.571   798
+15   151.286 125.429   329 201.857
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1776
+CC  accession: cluster_587
+CC  AC: cluster_587
+CC  id: cluster_587
+CC  name: cluster_587
+CC  version: 
+CC  name: cluster_587
+CC  description: ktGTtkmCGGAWGtg
+CC  transfac_consensus: 
+CC  matrix.nb: 1776
+XX
+//
+AC  cluster_588
+XX
+ID  cluster_588
+XX
+DE  wrcCGGAwGTTkwy
+P0       a     c     g     t
+1    15.5833 2.41667  3.25 10.0833
+2     1514 261.333 1098.83 486.083
+3    539.167 2177.08 658.667 202.917
+4    243.833 2616.17 69.8333    22
+5    10.8333 7.41667 2616.17 10.0833
+6    10.8333 10.5833 2616.17 30.8333
+7    2616.17    16 18.9167 37.25
+8     2251 64.75 17.0833 2527.67
+9    152.667 23.6667 2616.17  30.5
+10   56.8333 165.833 63.9167 2616.17
+11   336.417 176.083 580.917 2514.83
+12   447.75 130.75 1334.92 1350.58
+13   1348.17 369.667 374.167 1164.83
+14   52.75 437.167 245.583 325.25
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1777
+CC  accession: cluster_588
+CC  AC: cluster_588
+CC  id: cluster_588
+CC  name: cluster_588
+CC  version: 
+CC  name: cluster_588
+CC  description: wrcCGGAwGTTkwy
+CC  transfac_consensus: 
+CC  matrix.nb: 1777
+XX
+//
+AC  cluster_605
+XX
+ID  cluster_605
+XX
+DE  GATAAkrwymTTATC
+P0       a     c     g     t
+1     92.5    91   995  82.5
+2      995    48  47.5    63
+3       21  55.5  18.5   995
+4      995  58.5  38.5    53
+5      995  77.5  36.5    50
+6     50.5   216 353.5   375
+7    299.5 124.5   389   182
+8      279 211.5   241 263.5
+9      188 420.5   126   261
+10     378 343.5 211.5  62.5
+11      49    40  65.5   995
+12    53.5    41  44.5   995
+13     995  16.5  59.5    19
+14      68  41.5    41   995
+15    78.5   995    85  87.5
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1797
+CC  accession: cluster_605
+CC  AC: cluster_605
+CC  id: cluster_605
+CC  name: cluster_605
+CC  version: 
+CC  name: cluster_605
+CC  description: GATAAkrwymTTATC
+CC  transfac_consensus: 
+CC  matrix.nb: 1797
+XX
+//
+AC  cluster_606
+XX
+ID  cluster_606
+XX
+DE  rcCGGAAaCATATGk
+P0       a     c     g     t
+1     52.5  10.5  31.5    20
+2       15    78  30.5     4
+3     19.5  97.5     5     2
+4        1     0  97.5     0
+5        1     1  97.5   0.5
+6     97.5   1.5     0     2
+7       86     1     0    16
+8       58  22.5    16     1
+9      3.5  97.5   1.5     6
+10    97.5     2  10.5   6.5
+11       4   3.5   6.5  97.5
+12    97.5   5.5   5.5     5
+13      10   8.5     4  97.5
+14     2.5   2.5  97.5    13
+15       1   6.5  55.5    39
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1798
+CC  accession: cluster_606
+CC  AC: cluster_606
+CC  id: cluster_606
+CC  name: cluster_606
+CC  version: 
+CC  name: cluster_606
+CC  description: rcCGGAAaCATATGk
+CC  transfac_consensus: 
+CC  matrix.nb: 1798
+XX
+//
+AC  cluster_624
+XX
+ID  cluster_624
+XX
+DE  sbgamCAGATGkTcwsg
+P0       a     c     g     t
+1    14.25  20.5  27.5 17.75
+2    12.25  25.5 20.25    22
+3     12.5 18.75 32.75    16
+4    50.75     5    16   8.5
+5     50.5  21.5   5.5  2.75
+6     0.25 79.75     0     0
+7    79.75     0     0     0
+8        0  0.25 77.7399 2.0101
+9       71   2.5   5.5  0.75
+10       0     0     0 79.75
+11       0     0 79.75     0
+12    0.75  2.25  47.5  29.5
+13    0.75 18.25   1.5  59.5
+14      15 30.75 18.75  15.5
+15   22.25 18.75  17.5  21.5
+16   14.75 26.25    24 14.75
+17    1.25     1  2.25  0.75
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1818
+CC  accession: cluster_624
+CC  AC: cluster_624
+CC  id: cluster_624
+CC  name: cluster_624
+CC  version: 
+CC  name: cluster_624
+CC  description: sbgamCAGATGkTcwsg
+CC  transfac_consensus: 
+CC  matrix.nb: 1818
+XX
+//
+AC  cluster_636
+XX
+ID  cluster_636
+XX
+DE  crbcTGbtbstcrswGATAAgrvm
+P0       a     c     g     t
+1    2.4125 5.4125 2.375   2.3
+2    4.025 1.0625 4.675 2.7375
+3    0.5875 3.1375 5.625 3.1375
+4    68.8839 555.482 151.646 52.238
+5    53.2178 31.2969 31.5708 712.164
+6    6.71871 12.9103 747.598 61.0231
+7    75.8227 285.747 242.978 223.703
+8    195.095 146.054 191.844 295.244
+9    173.719 233.274 208.549 212.721
+10   169.561 262.732 225.507 170.45
+11   181.082 172.496 206.684 267.988
+12   182.906 246.924 202.884 195.536
+13   262.671 187.161 217.216 161.203
+14   121.971 366.577 233.289 106.413
+15   486.904 11.5928 9.55649 320.196
+16   0.525225 0.0922 827.62 0.0125
+17   827.507 0.167187 0.270987 0.304913
+18   0.879663 1.22286 1.13969 825.008
+19   779.204 0.787837 1.03474 47.2235
+20   651.008 22.8666 122.957 31.4183
+21   134.071 153.983 373.044 154.651
+22   56.5174 37.9183 74.391 15.0483
+23   28.7171 19.1407 19.2193 7.9229
+24   4.34131 3.59281 2.47006 2.09581
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1831
+CC  accession: cluster_636
+CC  AC: cluster_636
+CC  id: cluster_636
+CC  name: cluster_636
+CC  version: 
+CC  name: cluster_636
+CC  description: crbcTGbtbstcrswGATAAgrvm
+CC  transfac_consensus: 
+CC  matrix.nb: 1831
+XX
+//
+AC  cluster_672
+XX
+ID  cluster_672
+XX
+DE  rcCGGAAryrrrkATCGATy
+P0       a     c     g     t
+1      843 88.6667 409.667   257
+2    238.333  1217 394.667 50.6667
+3    216.667 1252.33 12.6667 0.333333
+4        1 2.66667 1252.33 9.33333
+5        0 1.33333 1252.33 5.66667
+6    1252.33     5    11 2.33333
+7    1252.33    35     2 390.333
+8    359.667 103.667   774 15.3333
+9    135.333   390 132.667 594.667
+10   397.333 206.333 445.333 202.667
+11   352.667 302.667 376.333 220.667
+12   332.333 303.333   324 293.333
+13     257 176.333   464 354.667
+14    1189 23.6667 311.333 65.6667
+15   31.3333 7.66667 4.33333 1252.33
+16   19.3333 1252.33 18.3333 310.667
+17     177 14.6667 1252.33 11.6667
+18   1252.33 8.66667 8.66667 41.6667
+19   100.333 273.667 37.3333 1252.33
+20     177 336.667   205   456
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1871
+CC  accession: cluster_672
+CC  AC: cluster_672
+CC  id: cluster_672
+CC  name: cluster_672
+CC  version: 
+CC  name: cluster_672
+CC  description: rcCGGAAryrrrkATCGATy
+CC  transfac_consensus: 
+CC  matrix.nb: 1871
+XX
+//
+AC  cluster_693
+XX
+ID  cluster_693
+XX
+DE  srSstGvsss
+P0       a     c     g     t
+1        0 54.2073 45.7927     0
+2    42.4218 22.8455 34.3603 0.37245
+3        0 68.4029 31.5971     0
+4        0 33.0915 66.9086     0
+5    9.5639 17.9184 22.8246 49.693
+6        0 0.39645 99.6035     0
+7    25.8762 31.7144 42.4094     0
+8    4.8563 46.4001 42.8568 5.88675
+9    1.39665 48.1973 40.5578 9.84825
+10   7.7367 44.0195 44.3092 3.93465
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1894
+CC  accession: cluster_693
+CC  AC: cluster_693
+CC  id: cluster_693
+CC  name: cluster_693
+CC  version: 
+CC  name: cluster_693
+CC  description: srSstGvsss
+CC  transfac_consensus: 
+CC  matrix.nb: 1894
+XX
+//
+AC  cluster_714
+XX
+ID  cluster_714
+XX
+DE  rcaGAAAACCGAAwmv
+P0       a     c     g     t
+1    1249.5 809.75 1178.5 429.5
+2    783.75 2023.5   856 453.75
+3    3044.25 548.25 426.25 527.25
+4    983.25   166 3209.5 325.5
+5    3489.25    33    24 102.5
+6    3489.25  6.25  0.75 10.25
+7    3489.25 27.25 16.25     8
+8    3489.25  7.25  6.75  1.75
+9     4.25 3489.25     9  1.25
+10    17.5 3489.25 25.25  4.75
+11   32.25   1.5 3489.25  1.75
+12   3489.25 74.75 39.25  5.75
+13   3489.25     4 18.75 168.25
+14   1492.25 651.5 267.5 1406.25
+15   1669.75 1496.75 200.25 516.25
+16     279 262.75 240.75 140.75
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1918
+CC  accession: cluster_714
+CC  AC: cluster_714
+CC  id: cluster_714
+CC  name: cluster_714
+CC  version: 
+CC  name: cluster_714
+CC  description: rcaGAAAACCGAAwmv
+CC  transfac_consensus: 
+CC  matrix.nb: 1918
+XX
+//
+AC  cluster_723
+XX
+ID  cluster_723
+XX
+DE  GGACAGCtCCy
+P0       a     c     g     t
+1        0     0    25     0
+2      0.2     0  24.8     0
+3    91.8511 3.79125 2.20355 2.15405
+4    1.3945 94.1906 3.91035 0.504525
+5    94.722 1.73948 2.36538 1.17315
+6    16.4644 3.07443 77.9753 2.48585
+7    4.92315 86.7402 4.04765 4.289
+8    10.0073 2.60355 21.1349 66.2541
+9    5.91538 79.4646 9.5623 5.05767
+10   2.0259 93.2773 0.464075 4.23268
+11       0 15.625 11.7592 22.6157
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1928
+CC  accession: cluster_723
+CC  AC: cluster_723
+CC  id: cluster_723
+CC  name: cluster_723
+CC  version: 
+CC  name: cluster_723
+CC  description: GGACAGCtCCy
+CC  transfac_consensus: 
+CC  matrix.nb: 1928
+XX
+//
+AC  cluster_888
+XX
+ID  cluster_888
+XX
+DE  drGkGGGCGtg
+P0       a     c     g     t
+1    900.333 242.69 798.667 648.644
+2    1048.43    43  1103 429.232
+3    44.3333 1.33333  2577     1
+4    12.2998 0.9662 1447.07 1163.33
+5        0     0 2619.33 4.33533
+6    1.44927     0 2622.22     0
+7        0     0 2620.29 3.38163
+8    2.29887 2591.7     0 29.6667
+9    7.39213     0 2616.27     0
+10   482.289 531.619 561.839 1047.92
+11   521.599 503.831 1021.76 543.14
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 2110
+CC  accession: cluster_888
+CC  AC: cluster_888
+CC  id: cluster_888
+CC  name: cluster_888
+CC  version: 
+CC  name: cluster_888
+CC  description: drGkGGGCGtg
+CC  transfac_consensus: 
+CC  matrix.nb: 2110
+XX
+//
+AC  cluster_913
+XX
+ID  cluster_913
+XX
+DE  ETS1_GM12878_encode-Myers_seq_hsa_r1:Trawler_3_Intergenic
+P0       A     C     G     T
+1      100     0     0     0
+2      100     0     0     0
+3      100     0     0     0
+4    11.6279 18.6047 2.3256 67.4419
+5    13.9535 76.7442 4.6512 4.6512
+6    6.9767 23.2558 9.3023 60.4651
+7    2.3256 97.6744     0     0
+8        0     0   100     0
+9    2.3256 67.4419 13.9535 16.2791
+10   2.3256 18.6047 74.4186 4.6512
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 2139
+CC  accession: cluster_913
+CC  AC: cluster_913
+CC  id: cluster_913
+CC  name: cluster_913
+CC  version: 
+CC  name: cluster_913
+CC  description: ETS1_GM12878_encode-Myers_seq_hsa_r1:Trawler_3_Intergenic
+CC  transfac_consensus: 
+CC  matrix.nb: 2139
+XX
+//
+AC  cluster_957
+XX
+ID  cluster_957
+XX
+DE  ETS1_3
+P0       A     C     G     T
+1       10    40    10    40
+2     42.5     0     0  57.5
+3        0   2.5     0  97.5
+4        0  97.5   2.5     0
+5        0  97.5     0   2.5
+6     12.5   7.5  42.5  37.5
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 2187
+CC  accession: cluster_957
+CC  AC: cluster_957
+CC  id: cluster_957
+CC  name: cluster_957
+CC  version: 
+CC  name: cluster_957
+CC  description: ETS1_3
+CC  transfac_consensus: 
+CC  matrix.nb: 2187
+XX
+//
+AC  cluster_1000
+XX
+ID  cluster_1000
+XX
+DE  AACCGGaary
+P0       a     c     g     t
+1       50     0     0     0
+2      100     0     0     0
+3        0   100     0     0
+4        0   100     0     0
+5        0 14.7754 85.2245     0
+6    7.29355 13.0274 76.6274 3.0515
+7    62.7109 22.4081 11.9047 2.9762
+8    64.6775 24.8267     0 10.4958
+9    26.3488 18.5353 45.2155 9.90055
+10   7.7381 20.2381 9.5238  12.5
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 4
+CC  accession: cluster_1000
+CC  AC: cluster_1000
+CC  id: cluster_1000
+CC  name: cluster_1000
+CC  version: 
+CC  name: cluster_1000
+CC  description: AACCGGaary
+CC  transfac_consensus: 
+CC  matrix.nb: 4
+XX
+//
+AC  cluster_1116
+XX
+ID  cluster_1116
+XX
+DE  GABPA_K562_encode-Myers_seq_hsa_v041610.1_r1:AlignACE_2_Intergenic
+P0       A     C     G     T
+1    1.1289 48.9602 49.9109     0
+2    26.5003 27.8075 23.2323 22.4599
+3    11.7053 20.5585 65.8348 1.9014
+4    8.1996 36.6607 53.4166 1.7231
+5    16.8152 34.5217 48.6631     0
+6    10.0416 20.202 69.7564     0
+7    1.7231 27.7481 70.5288     0
+8    27.0945 38.1462 33.1551 1.6043
+9    24.896 29.7683 45.2763 0.0594
+10       0 8.9721 91.0279     0
+11   25.0149 26.9756 24.896 23.1135
+12   0.6536 27.0945 72.2519     0
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 132
+CC  accession: cluster_1116
+CC  AC: cluster_1116
+CC  id: cluster_1116
+CC  name: cluster_1116
+CC  version: 
+CC  name: cluster_1116
+CC  description: GABPA_K562_encode-Myers_seq_hsa_v041610.1_r1:AlignACE_2_Intergenic
+CC  transfac_consensus: 
+CC  matrix.nb: 132
+XX
+//
+AC  cluster_1117
+XX
+ID  cluster_1117
+XX
+DE  GABPA_H1-hESC_encode-Myers_seq_hsa_r1:Trawler_1_Intergenic
+P0       A     C     G     T
+1      100     0     0     0
+2      100     0     0     0
+3        0   100     0     0
+4        0     0   100     0
+5        0     0   100     0
+6    72.2222 27.7778     0     0
+7    55.5556 36.1111     0 8.3333
+8    22.2222 27.7778 36.1111 13.8889
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 133
+CC  accession: cluster_1117
+CC  AC: cluster_1117
+CC  id: cluster_1117
+CC  name: cluster_1117
+CC  version: 
+CC  name: cluster_1117
+CC  description: GABPA_H1-hESC_encode-Myers_seq_hsa_r1:Trawler_1_Intergenic
+CC  transfac_consensus: 
+CC  matrix.nb: 133
+XX
+//
+AC  cluster_1249
+XX
+ID  cluster_1249
+XX
+DE  NFE2_K562_encode-Snyder_seq_hsa_r1:AlignACE_3_Intergenic
+P0       A     C     G     T
+1    13.4752 5.6738 40.8983 39.9527
+2        0     0   100     0
+3    42.5532 20.0946 37.3522     0
+4        0 49.1726 50.8274     0
+5        0 22.9314 32.8605 44.208
+6        0 64.3026 35.6974     0
+7    38.0615 15.13 21.7494 25.0591
+8        0 11.5839 88.4161     0
+9        0 64.7754 35.2246     0
+10   34.279 13.2388 35.9338 16.5485
+11       0 29.3144 70.6856     0
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 279
+CC  accession: cluster_1249
+CC  AC: cluster_1249
+CC  id: cluster_1249
+CC  name: cluster_1249
+CC  version: 
+CC  name: cluster_1249
+CC  description: NFE2_K562_encode-Snyder_seq_hsa_r1:AlignACE_3_Intergenic
+CC  transfac_consensus: 
+CC  matrix.nb: 279
+XX
+//
+AC  cluster_1379
+XX
+ID  cluster_1379
+XX
+DE  AP-2rep_transfac_M00468
+P0       A     C     G     T
+1    18.1818 72.7273     0 9.0909
+2    63.6364 18.1818     0 18.1818
+3    9.0909 9.0909 81.8182     0
+4        0 18.1818     0 81.8182
+5    18.1818 9.0909 63.6364 9.0909
+6    9.0909 9.0909 63.6364 18.1818
+7    18.1818 9.0909 54.5455 18.1818
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 422
+CC  accession: cluster_1379
+CC  AC: cluster_1379
+CC  id: cluster_1379
+CC  name: cluster_1379
+CC  version: 
+CC  name: cluster_1379
+CC  description: AP-2rep_transfac_M00468
+CC  transfac_consensus: 
+CC  matrix.nb: 422
+XX
+//
+AC  cluster_1653
+XX
+ID  cluster_1653
+XX
+DE  rGcCgACGCCCw
+P0       A     C     G     T
+1      174    20   141    30
+2       72     5   366    10
+3       34   366   107    40
+4        0   366     2     0
+5       83    75   366    14
+6      366    25     0     2
+7        0   366     0     0
+8       24     5   366     3
+9        0   366     0     1
+10       0   366     0     2
+11       0   366     1    31
+12     223    66    64   143
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 726
+CC  accession: cluster_1653
+CC  AC: cluster_1653
+CC  id: cluster_1653
+CC  name: cluster_1653
+CC  version: 
+CC  name: cluster_1653
+CC  description: rGcCgACGCCCw
+CC  transfac_consensus: 
+CC  matrix.nb: 726
+XX
+//
+AC  cluster_1925
+XX
+ID  cluster_1925
+XX
+DE  ETS1_GM12878_encode-Myers_seq_hsa_r1:AlignACE_2_Intergenic
+P0       A     C     G     T
+1        0 19.3789 80.6211     0
+2        0 22.1118 77.8882     0
+3    9.5652    20 70.4348     0
+4    46.3354 21.7391 31.9255     0
+5    26.8323 23.7267 34.0373 15.4037
+6    22.3602 27.5776 27.205 22.8571
+7    18.7578 21.118 25.9627 34.1615
+8        0 15.0311 84.9689     0
+9    20.6211 27.0807 21.8634 30.4348
+10   47.205 15.9006 36.8944     0
+11       0 13.913 86.087     0
+12   0.9938 32.5466 27.9503 38.5093
+13       0 43.6025 31.3043 25.0932
+14   1.9876 48.6957 29.1925 20.1242
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1028
+CC  accession: cluster_1925
+CC  AC: cluster_1925
+CC  id: cluster_1925
+CC  name: cluster_1925
+CC  version: 
+CC  name: cluster_1925
+CC  description: ETS1_GM12878_encode-Myers_seq_hsa_r1:AlignACE_2_Intergenic
+CC  transfac_consensus: 
+CC  matrix.nb: 1028
+XX
+//
+AC  cluster_1971
+XX
+ID  cluster_1971
+XX
+DE  TCF11_transfac_M00285
+P0       A     C     G     T
+1    9.6774 6.4516 83.871     0
+2        0     0     0   100
+3        0   100     0     0
+4      100     0     0     0
+5    3.2258 16.129     0 80.6452
+6    16.129 25.8065 25.8065 32.2581
+7    22.5806 29.0323 16.129 32.2581
+8    35.4839 9.6774 9.6774 45.1613
+9    29.0323 9.6774 32.2581 29.0323
+10   12.9032 25.8065 32.2581 29.0323
+11   26.6667 26.6667 23.3333 23.3333
+12   26.6667 26.6667 23.3333 23.3333
+13   17.2414 27.5862 34.4828 20.6897
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1079
+CC  accession: cluster_1971
+CC  AC: cluster_1971
+CC  id: cluster_1971
+CC  name: cluster_1971
+CC  version: 
+CC  name: cluster_1971
+CC  description: TCF11_transfac_M00285
+CC  transfac_consensus: 
+CC  matrix.nb: 1079
+XX
+//
+AC  cluster_2120
+XX
+ID  cluster_2120
+XX
+DE  TCF11:MafG_transfac_M00284
+P0       A     C     G     T
+1    28.5714 42.8571 21.4286 7.1429
+2    28.5714 28.5714 7.1429 35.7143
+3    42.8571 14.2857 14.2857 28.5714
+4    35.7143 28.5714 14.2857 21.4286
+5    35.7143 28.5714 14.2857 21.4286
+6    64.2857     0 28.5714 7.1429
+7        0     0     0   100
+8        0     0   100     0
+9      100     0     0     0
+10       0 85.7143 14.2857     0
+11   21.4286     0 21.4286 57.1429
+12   15.3846 61.5385 7.6923 15.3846
+13   78.5714     0 7.1429 14.2857
+14   7.1429     0 85.7143 7.1429
+15       0 92.8571     0 7.1429
+16   92.8571     0 7.1429     0
+17   42.8571 14.2857 21.4286 21.4286
+18   21.4286 7.1429 14.2857 57.1429
+19   28.5714     0 7.1429 64.2857
+20   35.7143 35.7143 21.4286 7.1429
+21   21.4286 21.4286 7.1429    50
+22   7.6923 15.3846 61.5385 15.3846
+XX
+CC  residue_type: 
+CC  program: transfac
+CC  matrix.nb: 1246
+CC  accession: cluster_2120
+CC  AC: cluster_2120
+CC  id: cluster_2120
+CC  name: cluster_2120
+CC  version: 
+CC  name: cluster_2120
+CC  description: TCF11:MafG_transfac_M00284
+CC  transfac_consensus: 
+CC  matrix.nb: 1246
+XX
+//
