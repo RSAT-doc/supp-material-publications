@@ -1,10 +1,8 @@
 ---
-title: "Study-case1_MPRA"
+title: "MPRA variants analysis"
 author: "Maria Jose Rocha, Walter Santana"
 date: "21/09/2019"
-output: 
-  html_document:
-    keep_md: yes
+output: html_document
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -468,9 +466,14 @@ write.table(df.errors, file = "data/MPRAS.errors.tab",sep = "\t",
 ```
 
 ##Variation-scan Analysis
-### Sequences from MPRA variations and oligo-analysis background model
+### Sequences from MPRA variations and oligo-analyisis background model
 
 ```{bash, eval=FALSE}
+##Obtain TF matrices 
+grep -i -E 'GATA1|KLF1|DHS|TAL1|ETS|FLI1|AP-1
+|NFE2|LDB1' data/matrices/clusters_motif_names.tab | cut -f1 > data/matrixnames.list
+
+python3 source/matrices.py > data/mpra_matrices.txt
 
 
 #convert-variations
@@ -486,16 +489,7 @@ cut -f10 data/MPRA_Variants.annot75.varSeq | grep -v ";" | tail -n +2  > data/bg
 #oligo-analysis 
 oligo-analysis -l 2 -i data/bg_sequences.txt -o data/MPRA_bgmodel.oa -format raw 
 
-#Obtain all matrices for TFs relevant for erythrocytes
-#Extract matrices from RSAT database
-##Obtain names for matrices of interest
-grep -i -E 'GATA1|KLF1|DHS|TAL1|ETS|FLI1|AP-1
-|NFE2|LDB1' data/clusters_motif_names.tab | cut -f1 > data/matrixnames.list
-
-##Extract matrices of interest from file
-python3 source/matrices.py > data/mpra_matrices.txt
-
-#variation-scan for 
+#variation-scan for all matrices for TFs relevant for erythrocytes
 variation-scan -i data/MPRA_Variants.annot75.varSeq -m data/mpra_matrices.txt -bg data/MPRA_bgmodel.oa  -o results/MPRA_casestudy.annot75.vs.nothresholds.table  -lth w_diff 0 -lth pval_ratio 1
 
 #variation-scan for permuted matrices
@@ -510,12 +504,12 @@ variation-scan -i data/MPRA_Variants.annot75.varSeq -m data/mpra_permuted.tf -bg
 
 Taken from code supplied in Ulirsch et al., 2016.
 
-This step is time consumoing, precomputed files are avialble in the folder *data/Precomputed*
+This step is time consuming, precomputed files are avialble in the folder *data/Precomputed*
 
 ### Read MPRA data
 Read in raw barcode count data for MPRA:
 ```{r, eval=FALSE, include=TRUE}
-dir <- getwd() ####SET DIRECTORY but defult we use the local directoy where the Rmarkdown was started
+dir <- getwd() ####SET DIRECTORY but default we use the local directoy where the Rmarkdown was started
 MPRA <-
   data.frame(read_delim(
   file = paste0(dir, "/data/Raw/", "RBC_MPRA_minP_raw.txt"),
@@ -915,6 +909,32 @@ vs_perm_fold_change_pval <- vs_perm_fold_change[vs_perm_fold_change[,"best_pval"
 
 ```
 
+##Correlation plots
+```{r eval = FALSE}
+### Permuted matrices
+vs_filtered <-  vs[vs$posconcat %in% mpra_sig$posconcat, ]
+mpra_tmp <- tapply(mpra$CTRL.mut.p, mpra$posconcat, mean)
+max_mpra <- data.frame(posconcat = names(mpra_tmp), mpra = log10(mpra_tmp))
+
+vs_filtered_tmp <- tapply(vs_filtered$pval_ratio, vs_filtered$posconcat, mean)
+max_vs <- data.frame(posconcat = names(vs_filtered_tmp), vs = vs_filtered_tmp)
+
+vars <- merge(max_mpra, max_vs, by = "posconcat")
+
+
+
+
+pdf("Correlation_pval_w-diff.pdf")
+ggscatter(vars, x = "mpra", y = "vs", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "pearson",
+          xlab = "MPRA p-value for differential activity (log10)", ylab = "Variation-scan p-value ratio")
+dev.off()
+
+
+
+
+```
 
 ##UpsetR figure
 ```{r eval = FALSE}
@@ -1002,9 +1022,6 @@ limit_1000 <- which.min(abs(vs_df$pval-1000)^2)
 recall_10 <- if (sum(tp[1:limit_10]) + sum(fn[limit_10:length(fn)]) == 0) 0 else (sum(tp[1:limit_10]) / (sum(tp[1:limit_10]) + sum(fn[limit_10:length(fn)])))
 recall_100 <- if (sum(tp[1:limit_100]) + sum(fn[limit_100:length(fn)]) == 0) 0 else (sum(tp[1:limit_100]) / (sum(tp[1:limit_100]) + sum(fn[limit_100:length(fn)])))
 recall_1000 <- if (sum(tp[1:limit_1000]) + sum(fn[limit_1000:length(fn)]) == 0) 0 else (sum(tp[1:limit_1000]) / (sum(tp[1:limit_1000]) + sum(fn[limit_1000:length(fn)])))
-
-
-
 
 
 
